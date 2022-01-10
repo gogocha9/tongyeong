@@ -9233,6 +9233,9 @@ ul.u-text li:last-child {
     display: block;
     width: 15px;
   }
+  .u-background-effect-image {
+    background-position-y: 50%;
+  }
 }
 .u-image,
 .u-background-effect-image,
@@ -9308,7 +9311,7 @@ section.u-image,
 }
 @media (max-width: 575px) {
   .u-sheet {
-    width: 340px;
+    width: 420px;
   }
 }
 .u-sheet .u-sheet {
@@ -18116,7 +18119,7 @@ p {
   font-family: Georgia, serif !important;
 }
 .u-font-roboto.u-custom-font {
-  font-family: 'hanna';
+  font-family: 'hanna' !important;
 }
 .u-font-open-sans.u-custom-font {
   font-family: 'Open Sans', sans-serif !important;
