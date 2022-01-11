@@ -6,6 +6,12 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
  @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+ @font-face {
+  font-family: 'GmarketSansBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .fr-clearfix::after {
   clear: both;
@@ -18130,6 +18136,9 @@ p {
 .u-font-montserrat.u-custom-font {
   font-family: Montserrat, sans-serif !important;
 }
+.u-font-gmarket.u-custom-font {
+  font-family: 'GmarketSansBold';
+}
 .u-font-roboto-condensed.u-custom-font {
   font-family: 'Roboto Condensed', sans-serif !important;
 }
@@ -20936,7 +20945,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'GmarketSansBold';
 }
 /*end-variables font-family*/
 /*begin-variables color*/
