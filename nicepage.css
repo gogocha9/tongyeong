@@ -23135,7 +23135,6 @@ a.u-link.u-hover-palette-1-dark-3:hover {
 .u-container-style.u-palette-1-dark-2:before,
 .u-container-layout.u-palette-1-dark-2:before,
 .u-table-alt-palette-1-dark-2 tr:nth-child(even) {
-  color: #ffffff;
   background-color: #425465;
 }
 .u-button-style.u-palette-1-dark-2,
@@ -35938,7 +35937,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-image-1 {
-  width: 80px;
+  width: 160px;
   height: 40px;
   margin: 40px auto 0 0;
 }
