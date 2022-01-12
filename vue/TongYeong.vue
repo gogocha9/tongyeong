@@ -1,6 +1,7 @@
 <template>
    <div>
        <div id="wrap">
+           <div>
             <div :class="header">
                 <div :class="header-top">
                     <h3 :class="logo"><a href="#">TongYeong</a></h3>
@@ -25,6 +26,7 @@
                         <li><a href="#">y</a></li>
                     </ul>
                 </div>
+             </div>
             </div>
         </div>
    </div>

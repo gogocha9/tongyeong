@@ -4,14 +4,7 @@
  * Copyright 2014-2021 Froala Labs
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
- @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
- @font-face {
-  font-family: 'GmarketSansBold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
 .fr-clearfix::after {
   clear: both;
@@ -9327,6 +9320,7 @@ section.u-image,
   position: relative;
   flex: 1;
   max-width: 100%;
+  margin: auto;
 }
 .u-inner-container-layout,
 .u-container-layout > * {
@@ -18125,7 +18119,7 @@ p {
   font-family: Georgia, serif !important;
 }
 .u-font-roboto.u-custom-font {
-  font-family: 'hanna' !important;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 .u-font-open-sans.u-custom-font {
   font-family: 'Open Sans', sans-serif !important;
@@ -20442,6 +20436,8 @@ a.u-button-style.u-border-4 {
 .u-text.u-border-5,
 a.u-button-style.u-border-5 {
   border-width: 5px;
+  border-radius: 50px;
+  margin-bottom: 7px;
 }
 .u-shape-svg.u-border-5 {
   stroke-width: 5px;
@@ -20945,7 +20941,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'GmarketSansBold';
+  font-family: 'Noto Sans KR', sans-serif;
 }
 /*end-variables font-family*/
 /*begin-variables color*/
@@ -32107,7 +32103,7 @@ a.u-link.u-text-hover-palette-1-dark-3:hover {
 .u-text-palette-1-dark-2,
 a.u-button-style.u-text-palette-1-dark-2,
 a.u-button-style.u-text-palette-1-dark-2[class*="u-border-"] {
-  color: #425465 !important;
+  color: #fff !important;
 }
 a.u-button-style.u-text-palette-1-dark-2:hover,
 a.u-button-style.u-text-palette-1-dark-2[class*="u-border-"]:hover,
