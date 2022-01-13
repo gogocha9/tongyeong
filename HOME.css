@@ -96,7 +96,7 @@
 }
 
 .u-section-1 p.u-text-2 {
-  width: 915px;
+  width: 915px;1
   font-weight: 100;
   font-size: 20px;
   margin: 30px 10px;
@@ -112,7 +112,8 @@
 
 .header-bottom ion-icon{
   font-size: 3em;
-  color: #db545a;
+  color: #fff;
+  opacity: .5;
   animation-name: toBottom;
   animation-duration: 3s;
   animation-iteration-count: infinite;

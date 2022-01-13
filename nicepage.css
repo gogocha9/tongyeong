@@ -28341,7 +28341,7 @@ li.active > a.u-button-style.u-button-style.u-border-active-palette-2-light-3 {
   stroke: #db545a;
 }
 .u-button-style.u-border-palette-2-base {
-  border-color: #db545a !important;
+  border-color: #fff !important;
   color: #db545a !important;
   background-color: transparent !important;
 }
@@ -32803,7 +32803,7 @@ a.u-link.u-text-hover-palette-2-light-3:hover {
 .u-text-palette-2-base,
 a.u-button-style.u-text-palette-2-base,
 a.u-button-style.u-text-palette-2-base[class*="u-border-"] {
-  color: #db545a !important;
+  color: #fff !important;
 }
 a.u-button-style.u-text-palette-2-base:hover,
 a.u-button-style.u-text-palette-2-base[class*="u-border-"]:hover,
@@ -32835,7 +32835,7 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-2-base[class*="u
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-2-base.active,
 .u-popupmenu-items.u-text-hover-palette-2-base .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-2-base .u-nav-link.active {
-  color: #db545a !important;
+  color: #fff !important;
 }
 .u-text-palette-2-base .u-svg-link,
 .u-text-hover-palette-2-base:hover .u-svg-link,
