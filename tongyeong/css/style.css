@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ /* scrollbar */
+ ::-webkit-scrollbar
+ {
+     width: 7px;
+ }
+ 
+ ::-webkit-scrollbar-thumb
+ {
+     background: #c1c1c1;
+     border-radius: 10px;
+ }
+ 
+ ::-webkit-scrollbar-track
+ {
+     background: rgba(201, 201, 201, 0.5);
+     box-shadow: inset 0 0 5px white;
+ }
+ /* //scrollbar */
+
+#header {
+    background-image: linear-gradient(rgba(94, 157, 252, 0.4), rgba(165, 165, 165, 0.1)), url("../img/main-bg.jpg");
+    background-position: 50% 10%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#gnb {
+}
+
+#logo {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    animation-name: toBottom;
+    animation-timing-function: ease;
+    transition: top 0.5s;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#menu li {
+    animation-name: toBottom;
+    animation-timing-function: ease;
+    transition: top 0.5s;
+    animation-duration: .7s;
+    animation-delay: calc(0.1s * var(--i));
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#sns li {
+    animation-name: toRight;
+    animation-timing-function: ease;
+    transition: top 0.5s;
+    animation-duration: .7s;
+    animation-delay: calc(0.1s * var(--i));
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#intro {
+    animation-name: toBottom;
+    animation-timing-function: ease;
+    transition: top 0.5s;
+    animation-duration: .7s;
+    animation-delay: .8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#sns li:nth-child(1) a {
+    color: #3b5998;
+}
+#sns li:nth-child(2) a {
+    color: #c4302b;
+}
+#sns li:nth-child(3) a {
+    color: #e7036a;
+}
+#sns li:nth-child(4) a {
+    color: #00acee;
+}
+
+@keyframes toBottom {
+    0% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes toRight {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
