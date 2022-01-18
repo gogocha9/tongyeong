@@ -29,24 +29,47 @@ body {
 
 #header {
     background-image: linear-gradient(rgba(94, 157, 252, 0.4), rgba(165, 165, 165, 0.1)), url("../img/main-bg.jpg");
-    background-position: 50% 10%;
-    min-height: 100vh;
+    background-position: 50%;
+    min-height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#gnb {
+
+#section {
+    min-height: 125px;
+    background: #f9fcff;
 }
 
-#logo {
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
+#gnb {
+    z-index: 11;
     animation-name: toBottom;
     animation-timing-function: ease;
     transition: top 0.5s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     opacity: 0;
+}
+
+#logo {
+    transition: .5s;
+}
+
+#menu-sm ion-icon {
+    color: #fff;
+    transition: .5s;
+}
+#gnb.active a span{
+    color: #6c757d;
+}
+
+#menu-sm.active ion-icon {
+    color: #6c757d;
+}
+
+#logo {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 
 #menu li {
@@ -77,6 +100,10 @@ body {
     animation-delay: .8s;
     animation-fill-mode: forwards;
     opacity: 0;
+}
+
+#intro h1{
+    font-size: 2em;
 }
 
 #sns li:nth-child(1) a:hover {
@@ -138,5 +165,32 @@ body {
     100% {
         transform: translateX(0);
         opacity: 1;
+    }
+}
+
+/* navagation */
+#navigation {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    transform: translateX(100%);
+}
+
+#navigation.active {
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    html, body {
+    width: auto !important;
+    overflow-x: hidden !important;
     }
 }
