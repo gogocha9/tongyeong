@@ -56,6 +56,10 @@ body {
     box-shadow: 0 1px 5px rgba(58, 69, 82, 0.25);
 }
 
+#gnb.down.active {
+    box-shadow: none;
+}
+
 #gnb.down a span {
     color: #6c757d;
 }
@@ -66,10 +70,6 @@ body {
 
 #gnb.down #menu-sm ion-icon {
     color: #6c757d;
-}
-
-#logo {
-    transition: .5s;
 }
 
 #menu-sm ion-icon {
@@ -84,10 +84,11 @@ body {
     color: #6c757d;
 }
 
-#logo {
+.logo {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
+    transition: .5s;
 }
 
 #menu li {

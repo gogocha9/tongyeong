@@ -23,7 +23,3 @@ menu_sm.onclick = function() {
     navigation.classList.toggle('active');
     body.classList.toggle('active');
 };
-
-gnb.scroll = function() {
-    
-}
