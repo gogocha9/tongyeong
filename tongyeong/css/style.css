@@ -53,6 +53,7 @@ body {
 
 #gnb.down {
     background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 5px rgba(58, 69, 82, 0.25);
 }
 
 #gnb.down a span {
@@ -114,6 +115,15 @@ body {
     opacity: 0;
 }
 
+#toTop {
+    transition: 0.5s;
+    display: none;
+}
+
+#toTop.down {
+    display: block;
+}
+
 #intro {
     animation-name: toBottom;
     animation-timing-function: ease;
@@ -142,16 +152,6 @@ body {
 }
 #sns li a {
     color: #fff;
-}
-
-#readMore {
-    animation-name: toBottom;
-    animation-timing-function: ease;
-    transition: top 0.5s;
-    animation-duration: 1s;
-    animation-delay: .6s;
-    animation-fill-mode: forwards;
-    opacity: 0;
 }
 
 #toButtom {
@@ -214,5 +214,40 @@ body {
     html, body {
     width: auto !important;
     overflow-x: hidden !important;
+    }
+}
+
+#explain_01 {
+    padding: 5rem 0;
+}
+
+#explain_02 {
+    padding: 5rem 0;
+}
+
+.learn {
+    transition: 0.2s;
+    color: #212529;
+}
+
+.learn:hover {
+    background: #212529;
+    color: #fff;
+}
+
+#carousel {
+    animation-name: carousel;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes carousel {
+    0% {
+        transform: translateX(150%);
+    }
+
+    100% {
+        transform: translateX(-200%);
     }
 }
