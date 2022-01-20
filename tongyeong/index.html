@@ -15,11 +15,12 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_01.css">
     <script src="js/navigation.js" defer></script>
 </head>
 
 <body>
+    <!-- header -->
     <div id="header" class="container-fluid position-relative">
         <div id="gnb" class="position-fixed w-100 start-0 d-flex flex-wrap justify-content-between  p-3 mb-4">
             <a href="http://gogocha22.dothome.co.kr/tongyeong/index.html"
@@ -31,15 +32,13 @@
             </div>
             <div class="d-none d-lg-block">
                 <ul id="menu" class="nav nav-pills align-items-center mr-auto fs-5">
-                    <li style="--i:1" class="nav-item"><a href="#" class="nav-link text-decoration-none">홈</a>
+                    <li style="--i:1" class="nav-item"><a href="http://gogocha22.dothome.co.kr/tongyeong/index.html" class="nav-link text-decoration-none">홈</a>
                     </li>
                     <li style="--i:2" class="nav-item"><a href="#" class="nav-link text-decoration-none">소개</a>
                     </li>
-                    <li style="--i:3" class="nav-item"><a href="#" class="nav-link text-decoration-none">예선현황</a>
+                    <li style="--i:3" class="nav-item"><a href="http://gogocha22.dothome.co.kr/tongyeong/to.html" class="nav-link text-decoration-none">예선현황</a>
                     </li>
-                    <li style="--i:4" class="nav-item"><a href="#" class="nav-link text-decoration-none">관리
-                            시스템
-                            가기</a></li>
+                    <li style="--i:4" class="nav-item"><a href="#" class="nav-link text-decoration-none">관리시스템</a></li>
                 </ul>
             </div>
         </div>
@@ -66,23 +65,6 @@
                 <ion-icon name="chevron-down-outline" class="text-white fs-2" id="toButtom"></ion-icon>
             </a>
         </div>
-
-        <div class="position-absolute bottom-0 d-none d-lg-block">
-            <ul class="list-unstyled fs-2 py-lg-4 py-sm-0" id="sns">
-                <li style="--i:1" class="nav-link"><a href="#">
-                        <ion-icon name="logo-facebook"></ion-icon>
-                    </a></li>
-                <li style="--i:2" class="nav-link"><a href="#">
-                        <ion-icon name="logo-youtube"></ion-icon>
-                    </a></li>
-                <li style="--i:3" class="nav-link"><a href="#">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </a></li>
-                <li style="--i:4" class="nav-link"><a href="#">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </a></li>
-            </ul>
-        </div>
     </div>
 
     <div id="navigation">
@@ -90,43 +72,10 @@
             <li class="nav-link"><a href="#" class="fs-2 text-decoration-none text-black-50">홈</a></li>
             <li class="nav-link"><a href="#" class="fs-2 text-decoration-none text-black-50">소개</a></li>
             <li class="nav-link"><a href="#" class="fs-2 text-decoration-none text-black-50">예선현황</a></li>
-            <li class="nav-link"><a href="#" class="fs-2 text-decoration-none text-black-50">관리 시스템 가기</a></li>
+            <li class="nav-link"><a href="#" class="fs-2 text-decoration-none text-black-50">관리 시스템</a></li>
         </ul>
     </div>
 
-    <!-- 꾸미기 -->
-    <!-- <div class="container" id="company-intro">
-        <div class="row pb-5 g-0">
-            <div class="col-xs-12">
-                <h1 class="py-5 text-center text-dark fs-1 fw-bold text-dark">회사 소개</h1>
-            </div>
-            <div class="col-lg-6 d-none d-lg-block">
-                <img src="img/section_01.jpg" alt="section_01" style="width: 600px;" class="img-fluid">
-            </div>
-            <div class="col-lg-6 p-3" id="explain_01">
-                <h1 class="fs-2 pb-4">설립목적</h1>
-                <p class="w-75 pb-3">당사는 한국가스공사 통영기지에 기항하는 LNG 운반선의 안전한 입, 출항을 위한 예선지원을 위하여 2001년 7월 13일 설립하였습니다</p>
-                <button type="button" class="btn btn-outline-dark bg-dark text-white">더 알아보기</button>
-            </div>
-
-            <div class="col-lg-6 p-2 d-flex align-items-center">
-                <div class="col-lg-1 d-none d-lg-block opacity-0">
-                    <h1>asdf</h1>
-                </div>
-                <div class="col-lg-9" id="explain_02">
-                    <h1 class="fs-2 pb-4">주요사업의 내용</h1>
-                    <p class="w-auto pb-3">한진해운, 대한해운, 현대상선, SK해운과 가스공사 통영 LNG 생산기지에서의 예선사용 계약 체결</p>
-                    <button type="button" class="btn btn-outline-dark bg-dark text-white">더 알아보기</button>
-                </div>
-                <div class="col-lg-2 d-none d-lg-block opacity-0">
-                    <h1>asdf</h1>
-                </div>
-            </div>
-            <div class="col-lg-6 d-none d-lg-block">
-                <img src="img/section_02.jpg" alt="section_02" style="width: 600px;" class="img-fluid">
-            </div>
-        </div>
-    </div> -->
     <div class="container-fluid py-1" id="partners">
         <div class="row d-flex justify-content-center align-items-center w-100">
             <div class="col-xs-12 w-75 overflow-hidden">
@@ -144,6 +93,7 @@
         </div>
     </div>
 
+    <!-- section -->
     <div class="container" id="company-intro">
         <div class="row pt-5">
             <div class="position-relative d-flex align-items-center">
@@ -180,191 +130,68 @@
                 <img src="img/section_02.jpg" alt="section_02" style="width: 580px;" class="img-fluid rounded-1">
             </div>
         </div>
-    </div>
 
-    <div id="natural_gas" class="container">
-        <div class="row py-5">
-            <div class="position-relative d-flex align-items-center">
-                <h2 class="fw-bold fs-2 lh-1 pe-3 title">예선현황</h2>
-                <p class="fs-6 text-black-50 d-none d-lg-block">한국가스공사 통영생산기지에 기항하는 LNG운반선의 예인, 정박, 하역주요</p>
+        <!-- 마우스 가따대면 d-none 클래스를 지우게 한다 -->
+        <div class="row d-flex justify-content-between align-items-center" id="profile">
+            <div class="col-lg-4 pf-box rounded-1 d-flex justify-content-between align-items-center flex-column p-5">
+                <img src="img/profile_01.jpg" alt="profile_01" class="rounded-circle" style="width: 250px; height: 250px;">
+                <span class="h2">LNG선예인서비스</span>
+                <p class="d-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quia doloribus asperiores corporis perferendis reiciendis provident, earum eius soluta eveniet!</p>
+            </div>
+            <div class="col-lg-4 pf-box rounded-1 d-flex justify-content-between align-items-center flex-column p-5">
+                <img src="img/profile_01.jpg" alt="profile_01" class="rounded-circle" style="width: 250px; height: 250px;">
+                <span class="h2">LNG선예인서비스</span>
+                <p class="d-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quia doloribus asperiores corporis perferendis reiciendis provident, earum eius soluta eveniet!</p>
+            </div>
+            <div class="col-lg-4 pf-box rounded-1 d-flex justify-content-between align-items-center flex-column p-5">
+                <img src="img/profile_01.jpg" alt="profile_01" class="rounded-circle" style="width: 250px; height: 250px;">
+                <span class="h2">LNG선예인서비스</span>
+                <p class="d-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quia doloribus asperiores corporis perferendis reiciendis provident, earum eius soluta eveniet!</p>
             </div>
         </div>
-
-        <div class="row overflow-scroll">
-            <table class="table text-center table-bordered text-truncate">
-                <tr>
-                    <th scope="col"></th>
-                    <th scope="col">통영5호</th>
-                    <th scope="col">통영7호</th>
-                    <th scope="col">통영9호</th>
-                    <th scope="col">통영11호</th>
-                </tr>
-
-                <tr>
-                    <th>선박번호</th>
-                    <td>CMR-027881</td>
-                    <td>CMR-027899</td>
-                    <td>CMR-088206</td>
-                    <td>CMR-084449</td>
-                </tr>
-                <tr>
-                    <th>선급번호</th>
-                    <td>0254596</td>
-                    <td>0254601</td>
-                    <td>0865517</td>
-                    <td>0865816</td>
-                </tr>
-                <tr>
-                    <th>IMO번호</th>
-                    <td>9278260</td>
-                    <td>9278272</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>호출부호 Call Sign</th>
-                    <td>314통영호440106020</td>
-                    <td>315통영호440106030</td>
-                    <td>316통영호440126980</td>
-                    <td>317통영호110126990</td>
-                </tr>
-                <tr>
-                    <th>선박의 종류</th>
-                    <td colspan="4">기선</td>
-                </tr>
-                <tr>
-                    <th>선적항</th>
-                    <td colspan="4">통영시</td>
-                </tr>
-                <tr>
-                    <th>선질</th>
-                    <td colspan="4">강</td>
-                </tr>
-                <tr>
-                    <th>총톤수</th>
-                    <td colspan="2">214t</td>
-                    <td colspan="2">251t</td>
-                </tr>
-                <tr>
-                    <th>길이</th>
-                    <td colspan="2">34.1m</td>
-                    <td colspan="2">37.4m</td>
-                </tr>
-                <tr>
-                    <th>너비</th>
-                    <td colspan="2">9.5m</td>
-                    <td colspan="2">9.8m</td>
-                </tr>
-                <tr>
-                    <th>깊이</th>
-                    <td colspan="2">4m</td>
-                    <td colspan="2">4.4m</td>
-                </tr>
-                <tr>
-                    <th>주기관</th>
-                    <td colspan="2">Caterpillar3516BDITASCAC2100PSx1800RPMx2기</td>
-                    <td colspan="2">NIIGATA(6L28HX)2250PSx750RPMx2기</td>
-                </tr>
-                <tr>
-                    <th>추진기</th>
-                    <td colspan="2">Ulstein Aquamaster
-                        us-205
-                        279RPMx2기
-                        Prop.dia. : 2000mm</td>
-                    <td colspan="2">NIIGATA ZP - 31
-                        274RPMx2기
-                        Prop.dia. : 2300mm</td>
-                </tr>
-                <tr>
-                    <th>발전기</th>
-                    <td colspan="2">STX-커민스 6BT 5.9
-                        DMGA
-                        100KWx1800RPMx2기</td>
-                    <td colspan="2">두산 인프라코어
-                        AD086TIS
-                        186KWx1800RPMx2기</td>
-                </tr>
-                <tr>
-                    <th>소화펌프모터</th>
-                    <td colspan="2">186KW</td>
-                    <td colspan="2">265KW</td>
-                </tr>
-                <tr>
-                    <th>펌프용량수두</th>
-                    <td colspan="2">240㎥/hx140m</td>
-                    <td colspan="2">360㎥/hx140m</td>
-                </tr>
-                <tr>
-                    <th>폼모니터</th>
-                    <td colspan="4">수동: 65A*1기 &nbsp;&nbsp;&nbsp; 자동: 100A*1기</td>
-                </tr>
-                <tr>
-                    <th>폼탱크 용량</th>
-                    <td colspan="2">5㎥</td>
-                    <td colspan="2">6㎥</td>
-                </tr>
-                <tr>
-                    <th>추진기 성능</th>
-                    <td colspan="2">좌 선회: 23초 &nbsp;&nbsp;&nbsp; 우 선회: 22초</td>
-                    <td colspan="2">좌 선회: 35초 &nbsp;&nbsp;&nbsp; 우 선회: 35초</td>
-                </tr>
-                <tr>
-                    <th>예향력</th>
-                    <td colspan="2">53.09 TON</td>
-                    <td colspan="2">55.32 TON</td>
-                </tr>
-                <tr>
-                    <th>항해 통신기기</th>
-                    <td colspan="4">Radar,G.P.S VHF, A.I.S</td>
-                </tr>
-                <tr>
-                    <th>진수일</th>
-                    <td colspan="2">2002년  8월</td>
-                    <td>2008년 9월</td>
-                    <td>2008년 10월</td>
-                </tr>
-                <tr>
-                    <th>조선자</th>
-                    <td colspan="4">연수조선 (주)</td>
-                </tr>
-            </table>
-        </div>
     </div>
 
+    <!-- footer -->
     <div class="container-fluid bg-dark p-5">
         <div class="container">
-            <div class="row d-flex pe-5">
+            <div class="row d-flex align-items-center">
                 <div class="col-lg-3 col-md-4 col-sm-12">
-                    <a href="http://gogocha22.dothome.co.kr/tongyeong/index.html"
-                    class="text-decoration-none">
+                    <a href="http://gogocha22.dothome.co.kr/tongyeong/index.html" class="text-decoration-none">
                         <span class="logo fs-2 text-muted">TongYeong</span>
                     </a>
                 </div>
-                <div class="col-lg-6 col-md-8 pt-lg-0 pt-md-0 pt-5 d-none d-md-block">
+                <div class="col-lg-6 col-md-8 pt-lg-3 pt-md-3 pt-5">
                     <ul class="list-unstyled d-flex text-truncate fs-6 py-lg-2">
-                        <li class="nav-link"><a href="#" class="text-white text-decoration-none">홈</a></li>
-                        <li class="nav-link"><a href="#" class="text-white text-decoration-none">소개</a></li>
-                        <li class="nav-link"><a href="#" class="text-white text-decoration-none">예선현황</a></li>
-                        <li class="nav-link"><a href="#" class="text-white text-decoration-none">관리 시스템 가기</a></li>
+                        <li class="me-3"><a href="#" class="text-white text-decoration-none">홈</a></li>
+                        <li class="me-3"><a href="#" class="text-white text-decoration-none">소개</a></li>
+                        <li class="me-3"><a href="#" class="text-white text-decoration-none">예선현황</a></li>
+                        <li class="me-3"><a href="#" class="text-white text-decoration-none">관리 시스템</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-12 col-sm-12">
-                    <ul class="list-unstyled d-flex fs-2 sns">
-                        <li class="nav-link"><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                        <li class="nav-link"><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
-                        <li class="nav-link"><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                        <li class="nav-link"><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                    </ul>
+                <div class="col-lg-3 col-md-12 col-sm-12 d-flex">
+                    <h6 class="text-white">이용약관&nbsp;&nbsp;&nbsp;</h6>
+                    <h6 class="text-white">개인정보처리방침</h6>
                 </div>
             </div>
             <div class="row py-5">
-                <div class="col-lg-9">
+                <div class="col-lg-5">
                     <h6 class="text-muted">서울특별시 서초구 서초동 1685-8 통영예선(주)</h6>
                     <p class="fs-6 text-muted">Copyright ⓒ2004 Tong Yeong All rights Reserved</p>
                 </div>
-                <div class="col-lg-3 d-flex">
-                    <h6 class="text-white">이용약관&nbsp;&nbsp;&nbsp;</h6>
-                    <h6 class="text-white">개인정보처리방침</h6>
+
+                <div class="col-lg-4">
+                    <p>
+                        <a href="http://validator.kldp.org/check?uri=referer"
+                          onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))"><img
+                          src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15" width="80"></a>
+                      </p>
+                </div>
+
+                <div class="col-lg-3">
+                    <select class="form-select w-50">
+                        <option>한국어</option>
+                        <option>Eng</option>
+                    </select>
                 </div>
             </div>
         </div>

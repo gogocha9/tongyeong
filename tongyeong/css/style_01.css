@@ -281,3 +281,21 @@ body {
         transform: translateX(-200%);
     }
 }
+
+#profile {
+    min-height: 100vh;
+}
+
+.pf-box {
+    width: 370px;
+    height: 500px;
+    background: #fff;
+    box-shadow: 1px 5px 15px rgba(58, 82, 69, 0.5);
+    transition: 0.2s;
+}
+
+.pf-box:hover {
+    transform: translatey(-10%);
+    width: 400px;
+    height: 600px;
+}
