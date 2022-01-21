@@ -34,11 +34,6 @@ body {
     background-size: cover;
 }
 
-#section {
-    min-height: 125px;
-    background: #f9fcff;
-}
-
 #gnb {
     height: 75px;
     z-index: 11;
@@ -105,16 +100,6 @@ body {
     color: #fff;
 }
 
-#sns li {
-    animation-name: toRight;
-    animation-timing-function: ease;
-    transition: top 0.5s;
-    animation-duration: 1s;
-    animation-delay: calc(0.25s * var(--i));
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
 #toTop {
     transition: 0.5s;
     display: none;
@@ -146,42 +131,6 @@ body {
 
 #intro h1{
     font-size: 2em;
-}
-
-#sns li:nth-child(1) a:hover {
-    color: #3b5998;
-}
-#sns li:nth-child(2) a:hover {
-    color: #c4302b;
-}
-#sns li:nth-child(3) a:hover {
-    color: #e7036a;
-}
-#sns li:nth-child(4) a:hover {
-    color: #00acee;
-}
-#sns li a {
-    color: #fff;
-}
-
-.sns li:nth-child(1) a:hover {
-    color: #3b5998;
-}
-.sns li:nth-child(2) a:hover {
-    color: #c4302b;
-}
-.sns li:nth-child(3) a:hover {
-    color: #e7036a;
-}
-.sns li:nth-child(4) a:hover {
-    color: #00acee;
-}
-.sns li a {
-    color: #fff;
-}
-
-.sns li:nth-child(1) a:hover {
-
 }
 
 #toButtom {
@@ -265,37 +214,44 @@ body {
     color: #fff;
 }
 
-#carousel {
-    animation-name: carousel;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+.pf-link-box {
+    position: relative;
+    z-index: 1;
 }
 
-@keyframes carousel {
-    0% {
-        transform: translateX(150%);
-    }
-
-    100% {
-        transform: translateX(-200%);
-    }
+.pf-link {
+    color: #212529;
+    text-decoration: none;
 }
 
-#profile {
-    min-height: 100vh;
+.pf-hover img {
+    transition: transform .35s;
+    -o-transition: transform .35s;
+    -moz-transition: transform .35s;
+    -webkit-transition: transform .35s;
 }
 
-.pf-box {
-    width: 370px;
-    height: 500px;
-    background: #fff;
-    box-shadow: 1px 5px 15px rgba(58, 82, 69, 0.5);
-    transition: 0.2s;
+.pf-hover:hover img {
+    -webkit-transform:scale(1.5); /*  크롬 */
+    -moz-transform:scale(1.5); /* FireFox */
+    -o-transform:scale(1.5); /* Opera */
+    transform:scale(1.5);
+    transition: transform 1.1s;
+    -o-transition: transform 1.1s;
+    -moz-transition: transform 1.1s;
+    -webkit-transition: transform 1.1s;    
 }
 
-.pf-box:hover {
-    transform: translatey(-10%);
-    width: 400px;
-    height: 600px;
+.map-container{
+    overflow:hidden;
+    position:relative;
+    padding: 20% 0 10% 0;
+}
+
+.map-container iframe{
+    left:0;
+    top:0;
+    height: 310px;
+    width:100%;
+    position:absolute;
 }
