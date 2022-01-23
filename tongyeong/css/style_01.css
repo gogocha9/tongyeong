@@ -236,10 +236,10 @@ body {
     -moz-transform:scale(1.5); /* FireFox */
     -o-transform:scale(1.5); /* Opera */
     transform:scale(1.5);
-    transition: transform 1.1s;
-    -o-transition: transform 1.1s;
-    -moz-transition: transform 1.1s;
-    -webkit-transition: transform 1.1s;    
+    transition: transform 2s;
+    -o-transition: transform 2s;
+    -moz-transition: transform 2s;
+    -webkit-transition: transform 2s;
 }
 
 .map-container{

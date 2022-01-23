@@ -18,13 +18,13 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="css/style_03.css">
-    <script src="js/navigation.js" defer></script>
+    <script src="js/to.js" defer></script>
 </head>
 
 <body>
-    <div id="gnb" class="position-fixed w-100 start-0 d-flex flex-wrap justify-content-between  p-3 mb-4">
+    <div id="gnb" class="position-relative w-100 start-0 d-flex flex-wrap justify-content-between p-3">
         <a href="http://gogocha22.dothome.co.kr/tongyeong/index.html"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+            class="d-flex align-items-center mb-md-0 me-md-auto text-decoration-none">
             <span class="logo fs-2">TongYeong</span>
         </a>
         <div id="menu-sm" class="d-lg-none align-items-center mr-auto menuBar">
@@ -62,8 +62,10 @@
 
     <!-- header -->
     <div class="container-fluid position-relative d-flex justify-content-center align-items-center flex-column" id="header">
-        <h1 id="title" class="text-white fw-bold">예선현황</h1>
-        <!-- <p class="text-white fs-5 text-center">한국가스공사 통영생산기지에 기항하는 LNG운반선의 예인, 정박, 하역주요</p> -->
+        <div id="intro" class="text-center">
+            <h1 id="title" class="text-white fw-bold fs-1">예선현황</h1>
+            <p class="text-white fs-5 text-center">한국가스공사 통영생산기지에 기항하는 LNG운반선의 예인, 정박, 하역주요</p>
+        </div>
         <div class="container-fluid position-absolute bottom-0 start-50 pb-4 translate-middle-x text-center">
             <a href="#current">
                 <ion-icon name="chevron-down-outline" class="text-white fs-2" id="toButtom"></ion-icon>
@@ -84,39 +86,46 @@
             <table class="table text-center table-bordered text-truncate">
                 <tr>
                     <th scope="col"></th>
+                    <th scope="col">통영1호</th>
+                    <th scope="col">통영3호</th>
                     <th scope="col">통영5호</th>
                     <th scope="col">통영7호</th>
-                    <th scope="col">통영9호</th>
-                    <th scope="col">통영11호</th>
                 </tr>
 
                 <tr>
                     <th>선박번호</th>
-                    <td>CMR-027881</td>
-                    <td>CMR-027899</td>
-                    <td>CMR-088206</td>
-                    <td>CMR-084449</td>
+                    <td>CMR-114424</td>
+                    <td>CMR-114435</td>
+                    <td>CMR-184407</td>
+                    <td>CMR-204403</td>
                 </tr>
                 <tr>
                     <th>선급번호</th>
-                    <td>0254596</td>
-                    <td>0254601</td>
-                    <td>0865517</td>
-                    <td>0865816</td>
+                    <td>1172994</td>
+                    <td>1173247</td>
+                    <td>1800028</td>
+                    <td>2000100</td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <th>IMO번호</th>
                     <td>9278260</td>
                     <td>9278272</td>
                     <td></td>
                     <td></td>
+                </tr> -->
+                <tr>
+                    <th>호출부호</th>
+                    <td>301통영호</td>
+                    <td>403통영호</td>
+                    <td>327통영호</td>
+                    <td>337통영호</td>
                 </tr>
                 <tr>
-                    <th>호출부호 Call Sign</th>
-                    <td>314통영호440106020</td>
-                    <td>315통영호440106030</td>
-                    <td>316통영호440126980</td>
-                    <td>317통영호110126990</td>
+                    <th>Call Sign</th>
+                    <td>440148720</td>
+                    <td>440148730</td>
+                    <td>440173430</td>
+                    <td>440330870</td>
                 </tr>
                 <tr>
                     <th>선박의 종류</th>
@@ -132,90 +141,107 @@
                 </tr>
                 <tr>
                     <th>총톤수</th>
-                    <td colspan="2">214t</td>
-                    <td colspan="2">251t</td>
+                    <td colspan="2">287t</td>
+                    <td colspan="2">291t</td>
                 </tr>
                 <tr>
                     <th>길이</th>
-                    <td colspan="2">34.1m</td>
-                    <td colspan="2">37.4m</td>
+                    <td colspan="4">34.78m</td>
                 </tr>
                 <tr>
                     <th>너비</th>
-                    <td colspan="2">9.5m</td>
-                    <td colspan="2">9.8m</td>
+                    <td colspan="4">10m</td>
                 </tr>
                 <tr>
                     <th>깊이</th>
-                    <td colspan="2">4m</td>
-                    <td colspan="2">4.4m</td>
+                    <td colspan="4">4.5m</td>
                 </tr>
                 <tr>
-                    <th>주기관</th>
-                    <td colspan="2">Caterpillar3516BDITASCAC2100PSx1800RPMx2기</td>
-                    <td colspan="2">NIIGATA(6L28HX)2250PSx750RPMx2기</td>
+                    <th rowspan="3" class="table_cell_center">주기관</th>
+                    <td colspan="3">YANMAR(6EY26)</td>
+                    <td colspan="1">YANMAR(6EY26W)</td>
                 </tr>
                 <tr>
-                    <th>추진기</th>
-                    <td colspan="2">Ulstein Aquamaster
-                        us-205
-                        279RPMx2기
-                        Prop.dia. : 2000mm</td>
-                    <td colspan="2">NIIGATA ZP - 31
-                        274RPMx2기
-                        Prop.dia. : 2300mm</td>
+                    <td colspan="3">2610PS✕750RPM✕2기</td>
+                    <td colspan="1">2300PS✕750RPM✕2기</td>
                 </tr>
                 <tr>
-                    <th>발전기</th>
-                    <td colspan="2">STX-커민스 6BT 5.9
-                        DMGA
-                        100KWx1800RPMx2기</td>
-                    <td colspan="2">두산 인프라코어
-                        AD086TIS
-                        186KWx1800RPMx2기</td>
+                    <td colspan="3">5,147 HP</td>
+                    <td colspan="1">4,536 HP</td>
+                </tr>
+                <tr>
+                    <th rowspan="4" class="table_cell_center">추진기</th>
+                    <td colspan="4">KONGSBERG</td>
+                </tr>
+                <tr>
+                    <td colspan="4">AzT us-205FP</td>
+                </tr>
+                <tr>
+                    <td colspan="4">266RPM✕2기</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Prop.dia. : 2400mm</td>
+                    <td colspan="1">Prop.dia. : 2300mm</td>
+                </tr>
+                <tr>
+                    <th rowspan="3">발전기</th>
+                    <td colspan="2">STX-커민스 6CTA8.3</td>
+                    <td colspan="2">두산 인프라코어</td>
+                </tr>
+                <tr>
+                    <td colspan="2">DMGA</td>
+                    <td colspan="2">AD086TIS</td>
+                </tr>
+                <tr>
+                    <td colspan="4">168KW✕1800RPM✕2기</td>
+                </tr>
+                <tr>
+                    <th>DRY POWDER</th>
+                    <td colspan="4">30 kg/sec, Tank Cap. 2Ton</td>
                 </tr>
                 <tr>
                     <th>소화펌프모터</th>
-                    <td colspan="2">186KW</td>
-                    <td colspan="2">265KW</td>
+                    <td colspan="4">252PS*1800RPM</td>
                 </tr>
                 <tr>
                     <th>펌프용량수두</th>
-                    <td colspan="2">240㎥/hx140m</td>
-                    <td colspan="2">360㎥/hx140m</td>
+                    <td colspan="4">240㎥/hx140m</td>
                 </tr>
                 <tr>
-                    <th>폼모니터</th>
-                    <td colspan="4">수동: 65A*1기 &nbsp;&nbsp;&nbsp; 자동: 100A*1기</td>
+                    <th rowspan="2">폼모니터</th>
+                    <td colspan="4">수동 : 65A*1기</td>
+                </tr>
+                <tr>
+                    <td colspan="4">자동 : 100A*1기</td>
                 </tr>
                 <tr>
                     <th>폼탱크 용량</th>
-                    <td colspan="2">5㎥</td>
-                    <td colspan="2">6㎥</td>
-                </tr>
-                <tr>
-                    <th>추진기 성능</th>
-                    <td colspan="2">좌 선회: 23초 &nbsp;&nbsp;&nbsp; 우 선회: 22초</td>
-                    <td colspan="2">좌 선회: 35초 &nbsp;&nbsp;&nbsp; 우 선회: 35초</td>
+                    <td colspan="4">5㎥</td>
                 </tr>
                 <tr>
                     <th>예향력</th>
-                    <td colspan="2">53.09 TON</td>
-                    <td colspan="2">55.32 TON</td>
+                    <td>60.08 TON</td>
+                    <td>62.67 TON</td>
+                    <td>62.35 TON</td>
+                    <td>59.1 TON</td>
                 </tr>
                 <tr>
-                    <th>항해 통신기기</th>
+                    <th rowspan="2">항해 통신기기</th>
                     <td colspan="4">Radar,G.P.S VHF, A.I.S</td>
                 </tr>
                 <tr>
+                    <td colspan="4">VHF, AIS</td>
+                </tr>
+                <tr>
                     <th>진수일</th>
-                    <td colspan="2">2002년 8월</td>
-                    <td>2008년 9월</td>
-                    <td>2008년 10월</td>
+                    <td>2011년 6월</td>
+                    <td>2011년 8월</td>
+                    <td>2018년 3월</td>
+                    <td>2020년 11월</td>
                 </tr>
                 <tr>
                     <th>조선자</th>
-                    <td colspan="4">연수조선 (주)</td>
+                    <td colspan="4">금강조선(주)</td>
                 </tr>
             </table>
         </div>
@@ -228,6 +254,46 @@
                     <p class="fs-6 text-black-50 d-none d-lg-block">한국가스공사 통영생산기지에 기항하는 LNG운반선의 예인, 정박, 하역주요</p>
                 </div>
             </div>
+            <ul class="nav nav-tabs" id="partners_tab_wrap" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-black-50 active" id="partners-sw-tab" data-bs-toggle="tab" data-bs-target="#partners-sw" type="button" role="tab" aria-controls="partners-sw" aria-selected="true">통영5호</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-black-50" id="partners-eq-tab" data-bs-toggle="tab" data-bs-target="#partners-eq" type="button" role="tab" aria-controls="partners-eq" aria-selected="false">통영7호</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-black-50" id="partners-bc-tab" data-bs-toggle="tab" data-bs-target="#partners-bc" type="button" role="tab" aria-controls="partners-bc" aria-selected="false">통영9호</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-black-50" id="partners-m-tab" data-bs-toggle="tab" data-bs-target="#partners-m" type="button" role="tab" aria-controls="partners-m" aria-selected="false">통영11호</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="partners_tab_wrap_Content">
+                <div class="tab-pane fade show active" id="partners-sw" role="tabpanel" aria-labelledby="partners-sw-tab">
+                    <ul class="list-unstyled py-3 nav">
+                        <li class="nav-link"><a href="#"><img src="img/profile_01.jpg" alt="engine_01"></a></li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="partners-eq" role="tabpanel" aria-labelledby="partners-eq-tab">
+                    <ul class="list-unstyled py-3 nav">
+                        <li class="nav-link"><a href="#"><img src="img/section_01.jpg" alt="partners_03"></a></li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="partners-bc" role="tabpanel" aria-labelledby="partners-bc-tab">
+                    <ul class="list-unstyled py-3 nav">
+                        <li class="nav-link"><a href="#"><img src="img/partners_08.gif" alt="partners_08"></a></li>
+                        <li class="nav-link"><a href="#"><img src="img/partners_03.gif" alt="partners_03"></a></li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="partners-m" role="tabpanel" aria-labelledby="partners-m-tab">
+                <ul class="list-unstyled py-3 nav">
+                    <li class="nav-link"><a href="#"><img src="img/partners_07.gif" alt="partners_07"></a></li>
+                    <li class="nav-link"><a href="#"><img src="img/partners_02.gif" alt="partners_02"></a></li>
+                    <li class="nav-link"><a href="#"><img src="img/partners_05.gif" alt="partners_05"></a></li>
+                    <li class="nav-link"><a href="#"><img src="img/partners_01.gif" alt="partners_01"></a></li>
+                </ul>
+                </div>
+              </div>
         </div>
     </div>
 

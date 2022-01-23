@@ -5,15 +5,19 @@ let gnb = document.querySelector('#gnb');
 let navigation = document.querySelector('#navigation');
 let body = document.querySelector('body');
 let toTop = document.querySelector('#toTop');
-let partners_tab_wrap = document.querySelectorAll('#partners_tab_wrap li button');
+let pf_box = document.querySelectorAll(".pf-box");
 
 window.onscroll = function() {
     if(window.scrollY > 0) {
         toTop.classList.add('down');
         gnb.classList.add('down');
+        gnb.classList.remove('position-relative');
+        gnb.classList.add('position-fixed');
     } else if (window.scrollY === 0) {
         gnb.classList.remove('down');
         toTop.classList.remove('down');
+        gnb.classList.remove('position-fixed');
+        gnb.classList.add('position-relative');
     }
 }
 
@@ -24,11 +28,6 @@ menu_sm.onclick = function() {
     body.classList.toggle('active');
 };
 
-// function activeLink() {
-//     partners_tab_wrap.forEach((item) => 
-//     item.classList.remove('active'));
-//     this.classList.add('active');
-// }
-
-// partners_tab_wrap.forEach((item) =>
-// item.addEventListener('click', activeLink));
+window.onload = function() {
+    pf_box.forEach(i, pf_box)
+}

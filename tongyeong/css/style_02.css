@@ -27,9 +27,9 @@ body {
  /* //scrollbar */
 
 #header {
-    background-image: linear-gradient(rgba(47, 130, 255, 0.4), rgba(143, 143, 143, 0.1)), url("../img/section_01.jpg");
+    background-image: linear-gradient(rgba(47, 130, 255, 0.4), rgba(143, 143, 143, 0.1)), url("../img/intro_bg.jpg");
     background-position: 50% 70%;
-    min-height: 380px;
+    min-height: 450px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -202,4 +202,56 @@ body {
 
 .table_cell_center {
     display: table-cell; text-align: center; vertical-align: middle;
+}
+
+#box_01 h1 {
+    font-size: 2rem !important;
+}
+
+.setUpimg li img {
+    width: 300px;
+    height: 375px;
+}
+
+#box_02 h1{
+    font-size: 1.4rem !important;
+}
+
+#box_02_img img{
+    width: 600px;
+}
+@media (max-width: 1300px) {
+    #box_01 h1,
+    #box_01 p {
+        font-size: 1.5rem !important;
+    }  
+    
+    .setUpimg li img {
+        width: 225px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    #box_01 h1,
+    #box_01 p {
+        font-size: 1.15rem !important;
+    }   
+    
+    .setUpimg li img {
+        width: 150px;
+        height: 225px;
+    }
+}
+
+@media (max-width: 565px) {
+    #box_01 h1,
+    #box_01 p {
+        font-size: 1rem !important;
+    }
+    
+    .setUpimg li img {
+        width: 100px;
+        height: 175px;
+    }
 }
