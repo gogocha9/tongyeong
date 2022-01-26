@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ /* scrollbar */
+ ::-webkit-scrollbar
+ {
+     width: 7px;
+ }
+ 
+ ::-webkit-scrollbar-thumb
+ {
+     background: #c1c1c1;
+     border-radius: 7px;
+ }
+ 
+ ::-webkit-scrollbar-track
+ {
+     background: transparent;
+ }
+ /* //scrollbar */
+
+#header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/intro_bg.jpg");
+    background-position: 50% 80%;
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header #title {
+    font-size: 4rem;
+    letter-spacing: 10px;
+}
+
+#intro {
+    animation-name: toBottom;
+    animation-timing-function: ease;
+    transition: top 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+/* #gnb {
+    height: 50px;
+    z-index: 11;
+    animation-name: toBottom;
+    animation-timing-function: ease;
+    transition: 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#gnb.down {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 5px rgba(58, 69, 82, 0.25);
+}
+
+#gnb.down.active {
+    box-shadow: none;
+}
+
+#gnb.down a span {
+    color: #6c757d;
+}
+
+#gnb.down #menu li a {
+    color: #6c757d;
+}
+
+#gnb.down #menu-sm ion-icon {
+    color: #6c757d;
+}
+
+#menu-sm ion-icon {
+    color: #6c757d;
+    transition: .5s;
+}
+#gnb.active a span{
+    color: #6c757d;
+}
+
+#menu-sm.active ion-icon {
+    color: #6c757d;
+}
+
+.logo {
+    color: #6c757d;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    transition: .5s;
+}
+
+#menu li {
+    animation-name: toBottom;
+    animation-timing-function: ease;
+    transition: top 0.5s;
+    animation-duration: 1s;
+    animation-delay: calc(0.25s * var(--i));
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#menu li a {
+    transition: 0.5s;
+    color: #6c757d;
+} */
+
+#toTop {
+    transition: 0.5s;
+    display: none;
+}
+
+#toTop.down {
+    display: block;
+}
+
+.title::before {
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    left: 10px;
+    width: 45px;
+    height: 5px;
+    background: #212529;
+}
+
+#intro {
+    animation-name: toBottom;
+    animation-timing-function: ease;
+    transition: top 0.5s;
+    animation-duration: 1s;
+    animation-delay: .8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#intro h1{
+    font-size: 2em;
+}
+
+#toButtom {
+    animation-name: toBottom-infinite;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#explain_01 {
+    padding: 1.1rem 0;
+}
+
+#explain_02 {
+    padding: 1.1rem 0;
+}
+
+.learn {
+    transition: 0.2s;
+    color: #212529;
+}
+
+.learn:hover {
+    background: #212529;
+    color: #fff;
+}
+
+@keyframes toBottom {
+    0% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes toBottom-infinite {
+    0%, 100% {
+        transform: translateY(-20%);
+    }
+    50% {
+        transform: translateY(45%);
+        opacity: 1;
+    }
+}
+
+/* navagation */
+#navigation {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    transform: translateX(100%);
+}
+
+#navigation.active {
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    html, body {
+    width: auto !important;
+    overflow-x: hidden !important;
+    }
+}
+
+.table_cell_center {
+    display: table-cell; text-align: center; vertical-align: middle;
+}
+
+#box_01 {
+    border: 1px solid #212529;
+}
+
+#box_01 h1 {
+    font-size: 2rem !important;
+}
+
+#box_01 p {
+    font-size: 1.75rem !important;
+}
+
+#box_02 h1{
+    font-size: 1.4rem !important;
+}
+
+.work-about span {
+    font-size: 1.2rem !important;
+}
+
+#main-work-about_wrap_01 {
+    min-height: 500px;
+}
+
+#main-work-about_wrap_01 p {
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+#main-work-about_wrap_02 p {
+    letter-spacing: 1.4px;
+    line-height: 1.5;
+}
+
+#main-work-about_wrap_01 #main-work-about_01 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../img/work_about_01.jpg');
+    background-repeat: no-repeat;
+}
+
+#main-work-about_wrap_01 #main-work-about_02 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../img/work_about_02.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+#main-work-about_wrap_01 #main-work-about_03 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../img/work_about_03.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+#main-work-about_wrap_02 {
+    min-height: 500px;
+}
+
+#main-work-about_wrap_02 #main-work-about_01 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../img/work_about_04.jpg');
+    background-repeat: no-repeat;
+}
+
+#main-work-about_wrap_02 #main-work-about_02 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../img/work_about_05.jpg');
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+}
+
+#main-work-about_wrap_02 #main-work-about_03 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../img/work_about_06.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1300px) {
+    #box_01 h1 {
+        font-size: 1.5rem !important;
+    } 
+
+    #box_01 p {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #box_01 h1 {
+        font-size: 1.15rem !important;
+    }   
+
+    #box_01 p {
+        font-size: 1.3rem !important;
+    }
+}
+
+@media (max-width: 565px) {
+    #box_01 h1 {
+        font-size: 1rem !important;
+    }
+    
+    #box_01 p {
+        font-size: .85rem !important;
+    }
+}

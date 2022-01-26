@@ -26,28 +26,34 @@ body {
  }
  /* //scrollbar */
 
- img[src$=".gif"], img[src$=".png"] {
-    image-rendering: -moz-crisp-edges; /* Firefox */
-    image-rendering: -o-crisp-edges; /* Opera */
-    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
-    image-rendering: crisp-edges;
-    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
-}
-
 #header {
-    background-image: linear-gradient(rgba(47, 130, 255, 0.4), rgba(143, 143, 143, 0.1)), url("../img/section_01.jpg");
-    background-position: 50% 80%;
-    min-height: 400px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/section_01.jpg");
+    background-position: 50% 70%;
+    min-height: 450px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#gnb {
-    height: 75px;
-    z-index: 11;
+#header #title {
+    font-size: 3.6rem;
+    letter-spacing: 10px;
+}
+
+#intro {
     animation-name: toBottom;
     animation-timing-function: ease;
     transition: top 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+/* #gnb {
+    height: 50px;
+    z-index: 11;
+    animation-name: toBottom;
+    animation-timing-function: ease;
+    transition: 0.5s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     opacity: 0;
@@ -75,7 +81,7 @@ body {
 }
 
 #menu-sm ion-icon {
-    color: #fff;
+    color: #6c757d;
     transition: .5s;
 }
 #gnb.active a span{
@@ -87,7 +93,7 @@ body {
 }
 
 .logo {
-    color: #fff;
+    color: #6c757d;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     transition: .5s;
@@ -105,8 +111,8 @@ body {
 
 #menu li a {
     transition: 0.5s;
-    color: #fff;
-}
+    color: #6c757d;
+} */
 
 #toTop {
     transition: 0.5s;
@@ -194,7 +200,6 @@ body {
     }
 }
 
-#title {
-    font-size: 4rem;
-    letter-spacing: 10px;
+.table_cell_center {
+    display: table-cell; text-align: center; vertical-align: middle;
 }
