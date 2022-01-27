@@ -277,18 +277,18 @@ body {
     min-height: 500px;
 }
 
-#main-work-about_wrap_02 #main-work-about_01 {
+#main-work-about_wrap_02 #main-work-about_04 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../img/work_about_04.jpg');
     background-repeat: no-repeat;
 }
 
-#main-work-about_wrap_02 #main-work-about_02 {
+#main-work-about_wrap_02 #main-work-about_05 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../img/work_about_05.jpg');
     background-position: 90% 50%;
     background-repeat: no-repeat;
 }
 
-#main-work-about_wrap_02 #main-work-about_03 {
+#main-work-about_wrap_02 #main-work-about_06 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../img/work_about_06.jpg');
     background-position: 50%;
     background-repeat: no-repeat;
