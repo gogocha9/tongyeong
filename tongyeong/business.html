@@ -27,7 +27,219 @@
 </head>
 
 <body>
-    사업영역
+    <div id="gnb" class="position-fixed w-100 start-0 d-flex flex-wrap align-items-center justify-content-between py-2 px-5">
+        <a href="http://gogocha22.dothome.co.kr/tongyeong/index.html"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+            <span class="logo fs-2">TongYeong</span>
+        </a>
+        <div id="menu-sm" class="d-lg-none align-items-center mr-auto menuBar">
+            <ion-icon name="menu-outline" class="fs-1"></ion-icon>
+        </div>
+        <div class="d-none d-lg-block" id="menu">
+            <ul class="nav nav-pills align-items-center mr-auto fs-5">
+                <li style="--i:1" class="nav-item menu-bar">
+                    <a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html"
+                    class="nav-link text-decoration-none nav-title">소개</a>
+                    <ul class="list-unstyled">
+                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html#setUp">회사소개</a></li>
+                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html#historyLine">연혁</a></li>
+                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html#partners">협력사&고객사</a></li>
+                    </ul>
+                </li>
+                <li style="--i:2" class="nav-item menu-bar">
+                    <a href="http://gogocha22.dothome.co.kr/tongyeong/business.html"
+                    class="nav-link text-decoration-none nav-title">사업소개</a>
+                    <ul class="list-unstyled">
+                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/business.html#main-work">사업요약</a></li>
+                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/business.html">천연가스</a></li>
+                    </ul>
+                </li>
+                <li style="--i:3" class="nav-item menu-bar">
+                    <a href="http://gogocha22.dothome.co.kr/tongyeong/to.html"
+                    class="nav-link text-decoration-none nav-title">예선현황</a>
+                    <ul class="list-unstyled">
+                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/to.html#current">예선현황</a></li>
+                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/to.html#partners">선박사진</a></li>
+                    </ul>
+                </li>
+                <li style="--i:4" class="nav-item menu-bar"><a href="#" class="nav-link text-decoration-none nav-title">관리시스템</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bg_gnb position-fixed start-0"></div>
+
+    <div id="toTop" class="position-fixed bottom-0 end-0 mb-1 translate-middle-x">
+        <a href="#header">
+            <ion-icon name="chevron-up-circle-outline" class="text-opacity-75 text-dark fs-1"></ion-icon>
+        </a>
+    </div>
+    
+    <div id="navigation">
+        <ul class="list-unstyled text-center">
+            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/index.html"
+                    class="fs-2 text-decoration-none text-black-50">소개</a></li>
+            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html" class="fs-2 text-decoration-none text-black-50">사업소개</a></li>
+            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/to.html"
+                    class="fs-2 text-decoration-none text-black-50">예선현황</a></li>
+            <li class="nav-link"><a href="#" class="fs-2 text-decoration-none text-black-50">관리 시스템</a></li>
+        </ul>
+    </div>
+
+    <!-- header -->
+    <div class="container-fluid position-relative d-flex justify-content-center align-items-center flex-column" id="header">
+        
+        <div id="intro" class="text-center">
+            <h1 id="title" class="text-white fw-bold">사업소개</h1>
+            <p class="text-white fs-5 text-center d-none d-lg-block">한국가스공사 통영생산기지에 기항하는 LNG운반선의 예인, 정박, 하역주요</p>
+        </div>
+        <div class="container-fluid position-absolute bottom-0 start-50 pb-4 translate-middle-x text-center">
+            <a href="#main-work">
+                <ion-icon name="chevron-down-outline" class="text-white fs-2" id="toButtom"></ion-icon>
+            </a>
+        </div>
+    </div>
+
+    <!-- section -->
+    <div class="container py-5" id="main-work">
+        <div class="row">
+            <div class="position-relative d-flex align-items-center">
+                <h2 class="fw-bold fs-2 lh-1 pe-3 title">주요사업</h2>
+                <p class="fs-6 text-black-50 d-none d-lg-block">한국가스공사 통영생산기지에 기항하는 LNG운반선의 예인, 정박, 하역주요</p>
+            </div>
+        </div>
+
+        <div class="pt-5 w-100 d-lg-flex" id="main-work-about_wrap_01">
+            <div class="position-relative col-lg-4 col-md-12 col-sm-12 p-5 d-flex flex-column" id="main-work-about_01">
+                <h1 class="text-white fw-bold mb-5">해운업</h1>
+                <p class="fs-5 text-white">코오롱인더스트리는 화학소재 전문기업입니다. 1957년 국내 최초로 나일론 사업을 시작하여 국가경제 발전에 일조한 (주)코오롱의 제조 사업부문이 회사의 전신입니다.</p>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 p-5 d-flex flex-column" id="main-work-about_02">
+                <h1 class="text-white fw-bold mb-5">예선업</h1>
+                <p class="fs-5 text-white">코오롱인더스트리는 화학소재 전문기업입니다. 1957년 국내 최초로 나일론 사업을 시작하여 국가경제 발전에 일조한 (주)코오롱의 제조 사업부문이 회사의 전신입니다. 산업 소재, 화학 및 필름, 전자재료의 각 부문을</p>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 p-5 d-flex flex-column" id="main-work-about_03">
+                <h1 class="text-white fw-bold mb-5">부동산임대업</h1>
+                <p class="fs-5 text-white">코오롱인더스트리는 화학소재 전문기업입니다. 1957년 국내 최초로 나일론 사업을 시작하여 국가경제 발전에 일조한 (주)코오롱의 제조 사업부문이 회사의 전신입니다. 산업 소재, 화학 및 필름, 전자재료의 각 부문을 중심으로 타이어코오드, 에어백, 스펀본드, 필름, DFR, 석유수지 등 다양한 제품을 생산 및 판매하고 있으며, 고부가가치 제품에 대한 지속적인 투자와</p>
+            </div>
+        </div>
+
+        <div class="mb-5 w-100 d-lg-flex" id="main-work-about_wrap_02">
+            <div class="col-lg-4 col-md-12 col-sm-12 p-5" id="main-work-about_04">
+                <h1 class="text-white fw-bold mb-5">선박부품 및 선용품 공급</h1>
+                <p class="fs-6 text-white">코오롱인더스트리는 화학소재 전문기업입니다. 1957년 국내 최초로 나일론 사업을 시작하여 국가경제 발전에 일조한 (주)코오롱의 제조 사업부문이 회사의 전신입니다.</p>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 p-5" id="main-work-about_05">
+                <h1 class="text-white fw-bold mb-5">예선업</h1>
+                <p class="fs-6 text-white">코오롱인더스트리는 화학소재 전문기업입니다. 1957년 국내 최초로 나일론 사업을 시작하여 국가경제 발전에 일조한 (주)코오롱의 제조 사업부문이 회사의 전신입니다. 산업 소재, 화학 및 필름, 전자재료의 각 부문을 중심으로 타이어코오드</p>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 p-5" id="main-work-about_06">
+                <h1 class="text-white fw-bold mb-5">시설관리업</h1>
+                <p class="fs-6 text-white">코오롱인더스트리는 화학소재 전문기업입니다. 1957년 국내 최초로 나일론 사업을 시작하여 국가경제 발전에 일조한 (주)코오롱의 제조 사업부문이 회사의 전신입니다. 산업 소재, 화학 및 필름, 전자재료의 각 부문을 중심으로 타이어코오드, 에어백, 스펀본드, 필름, DFR, 석유수지 등 다양한 제품을 생산 및 판매하고 있으며, 고부가가치 제품에 대한 지속적인</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5" id="company-intro">
+        <div id="explain_01" class="row g-0">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 d-none d-lg-block text-center">
+                    <img src="img/intro_section_01.jpg" alt="section_01" style="width: 580px;" class="img-fluid rounded-1">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="fs-2 pb-4">예선업</h1>
+                    <p class="w-75 pb-3 fs-5">당사는 한국가스공사 통영기지에 기항하는 LNG 운반선의 안전한 입, 출항을 위한 예선지원을 위하여 2001년 7월 13일
+                        설립하였습니다</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="explain_02" class="row g-0">
+            <div class="col-lg-6 p-0 p-lg-2 d-flex justify-content-center align-items-center">
+                <div class="col-lg-1 d-none d-lg-block opacity-0">
+                    <h1>asdf</h1>
+                </div>
+                <div class="col-lg-11 ps-lg-4">
+                    <h1 class="fs-2 pb-4">해운업</h1>
+                    <p class="w-75 pb-3 fs-5">한진해운, 대한해운, 현대상선, SK해운과 가스공사 통영 LNG 생산기지에서의 예선사용 계약 체결</p>
+                </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <img src="img/section_02.jpg" alt="section_02" style="width: 580px;" class="img-fluid rounded-1">
+            </div>
+        </div>
+
+        <div id="explain_03" class="row g-0">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 d-none d-lg-block text-center">
+                    <img src="img/section_01.jpg" alt="section_01" style="width: 580px;" class="img-fluid rounded-1">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="fs-2 pb-4">LNG선 예인 서비스</h1>
+                    <p class="w-75 pb-3 fs-5">당사는 한국가스공사 통영기지에 기항하는 LNG 운반선의 안전한 입, 출항을 위한 예선지원을 위하여 2001년 7월 13일
+                        설립하였습니다</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5" id="natural-gas">
+        <div class="row">
+            <div class="position-relative d-flex align-items-center">
+                <h2 class="fw-bold fs-2 lh-1 pe-3 title">천연가스</h2>
+                <p class="fs-6 text-black-50 d-none d-lg-block">천연가스는 해외 원산지에서 LNG상태로 KOGAS에 의해 도입됩니다</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid bg-dark p-5">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <a href="http://gogocha22.dothome.co.kr/tongyeong/index.html" class="text-decoration-none">
+                        <span class="logo fs-2 text-muted">TongYeong</span>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-8 pt-lg-3 pt-md-3 pt-5">
+                    <ul class="list-unstyled d-flex text-truncate fs-6 py-lg-2">
+                        <li class="me-3"><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html"
+                                class="text-white text-decoration-none">소개</a></li>
+                        <li class="me-3"><a href="http://gogocha22.dothome.co.kr/tongyeong/business.html"
+                                class="text-white text-decoration-none">사업소개</a></li>
+                        <li class="me-3"><a href="http://gogocha22.dothome.co.kr/tongyeong/to.html"
+                                class="text-white text-decoration-none">예선현황</a></li>
+                        <li class="me-3"><a href="#" class="text-white text-decoration-none">관리 시스템</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 d-flex">
+                    <h6 class="text-white">이용약관&nbsp;&nbsp;&nbsp;</h6>
+                    <h6 class="text-white">개인정보처리방침</h6>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-lg-5">
+                    <h6 class="text-muted">서울특별시 서초구 서초동 1685-8 통영예선(주)</h6>
+                    <p class="fs-6 text-muted">Copyright ⓒ2004 Tong Yeong All rights Reserved</p>
+                </div>
+
+                <div class="col-lg-4">
+                    <p>
+                        <a href="http://validator.kldp.org/check?uri=referer"
+                            onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))"><img
+                                src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5"
+                                height="15" width="80"></a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3">
+                    <select class="form-select w-50">
+                        <option>한국어</option>
+                        <option>Eng</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

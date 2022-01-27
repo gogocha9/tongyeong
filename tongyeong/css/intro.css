@@ -48,72 +48,6 @@ body {
     opacity: 0;
 }
 
-/* #gnb {
-    height: 50px;
-    z-index: 11;
-    animation-name: toBottom;
-    animation-timing-function: ease;
-    transition: 0.5s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
-#gnb.down {
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 1px 5px rgba(58, 69, 82, 0.25);
-}
-
-#gnb.down.active {
-    box-shadow: none;
-}
-
-#gnb.down a span {
-    color: #6c757d;
-}
-
-#gnb.down #menu li a {
-    color: #6c757d;
-}
-
-#gnb.down #menu-sm ion-icon {
-    color: #6c757d;
-}
-
-#menu-sm ion-icon {
-    color: #6c757d;
-    transition: .5s;
-}
-#gnb.active a span{
-    color: #6c757d;
-}
-
-#menu-sm.active ion-icon {
-    color: #6c757d;
-}
-
-.logo {
-    color: #6c757d;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    transition: .5s;
-}
-
-#menu li {
-    animation-name: toBottom;
-    animation-timing-function: ease;
-    transition: top 0.5s;
-    animation-duration: 1s;
-    animation-delay: calc(0.25s * var(--i));
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
-#menu li a {
-    transition: 0.5s;
-    color: #6c757d;
-} */
-
 #toTop {
     transition: 0.5s;
     display: none;
@@ -151,24 +85,6 @@ body {
     animation-name: toBottom-infinite;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-}
-
-#explain_01 {
-    padding: 1.1rem 0;
-}
-
-#explain_02 {
-    padding: 1.1rem 0;
-}
-
-.learn {
-    transition: 0.2s;
-    color: #212529;
-}
-
-.learn:hover {
-    background: #212529;
-    color: #fff;
 }
 
 @keyframes toBottom {
@@ -224,6 +140,8 @@ body {
 
 #box_01 {
     border: 1px solid #212529;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 #box_01 h1 {
@@ -236,62 +154,6 @@ body {
 
 #box_02 h1{
     font-size: 1.4rem !important;
-}
-
-.work-about span {
-    font-size: 1.2rem !important;
-}
-
-#main-work-about_wrap_01 {
-    min-height: 500px;
-}
-
-#main-work-about_wrap_01 p {
-    letter-spacing: 1.5px;
-    line-height: 1.5;
-}
-
-#main-work-about_wrap_02 p {
-    letter-spacing: 1.4px;
-    line-height: 1.5;
-}
-
-#main-work-about_wrap_01 #main-work-about_01 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../img/work_about_01.jpg');
-    background-repeat: no-repeat;
-}
-
-#main-work-about_wrap_01 #main-work-about_02 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../img/work_about_02.jpg');
-    background-position: 50%;
-    background-repeat: no-repeat;
-}
-
-#main-work-about_wrap_01 #main-work-about_03 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../img/work_about_03.jpg');
-    background-position: 50%;
-    background-repeat: no-repeat;
-}
-
-#main-work-about_wrap_02 {
-    min-height: 500px;
-}
-
-#main-work-about_wrap_02 #main-work-about_04 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../img/work_about_04.jpg');
-    background-repeat: no-repeat;
-}
-
-#main-work-about_wrap_02 #main-work-about_05 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../img/work_about_05.jpg');
-    background-position: 90% 50%;
-    background-repeat: no-repeat;
-}
-
-#main-work-about_wrap_02 #main-work-about_06 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../img/work_about_06.jpg');
-    background-position: 50%;
-    background-repeat: no-repeat;
 }
 
 @media (max-width: 1300px) {
@@ -321,5 +183,159 @@ body {
     
     #box_01 p {
         font-size: .85rem !important;
+    }
+}
+
+/* history */
+#history {
+    margin: 30px auto;
+    position: relative;
+}
+
+#history::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    padding: 20px 0;
+    width: 3px;
+    height: 100%;
+    background: #eee;
+}
+
+#history li {
+    list-style: none;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 25%;
+}
+
+#history li:before {
+    content: " ";
+    display: block; 
+    position: absolute; 
+    top: -4px; 
+    left: 43.3%;
+    width: 75px; 
+    height: 38px;
+    background-image: url(https://surc.or.kr/assets/icon-history-72e35a81b533771b1d598ddb83c79a8a761f88f76248478975f944c06bffefb8.png);
+    background-size: 78px 38px;
+}
+
+#history li:nth-child(odd) {
+    padding-left: 59.5%;
+}
+
+#history li:nth-child(odd)::before {
+    transform: rotate(180deg);
+    left: 48.3%;
+    right: auto;
+}
+
+#history li h4 {
+    padding-top: 6px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #3f454b;
+    font-weight: bold;
+}
+
+#history li p {
+    font-size: 15px;
+    line-height: 1.7;
+    letter-spacing: 0.01rem;
+    color: #707984;
+    word-break: keep-all;
+}
+
+#history li span {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    width: 320px;
+    height: 180px;
+    background: #dfdfdf;
+}
+
+@media (max-width: 1400px) {
+    #history li {
+        padding-left: 15%;
+    }
+
+    #history li:before {
+        left: 42%;
+    }
+
+    #history li:nth-child(odd) {
+        padding-left: 60%;
+    }
+
+    #history li:nth-child(odd)::before {
+        transform: rotate(180deg);
+        left: 48.1%;
+        right: auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    #history li {
+        padding-left: 10%;
+    }
+
+    #history li:before {
+        left: 40.5%;
+    }
+
+    #history li:nth-child(odd) {
+        padding-left: 65%;
+    }
+
+    #history li:nth-child(odd)::before {
+        transform: rotate(180deg);
+        left: 47.7%;
+        right: auto;
+    }
+}
+
+@media (max-width: 993px) {
+    #history li {
+        padding-left: 0%;
+    }
+
+    #history li:before {
+        left: 37.2%;
+    }
+
+    #history li:nth-child(odd) {
+        padding-left: 70%;
+    }
+
+    #history li:nth-child(odd)::before {
+        left: 46.8%;
+    }
+}
+
+@media (max-width: 761px) {
+    #history::before {
+        left: 0;
+    }
+    #history li {
+        padding-left: 30%;
+        left: -37px;
+    }
+
+    #history li:before {
+        left: 0%;
+        transform: rotate(180deg);
+    }
+
+    #history li:nth-child(odd) {
+        padding-left: 30%;
+    }
+
+    #history li:nth-child(odd)::before {
+        left: 0%;
     }
 }

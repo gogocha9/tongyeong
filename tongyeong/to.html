@@ -21,13 +21,14 @@
     <script src="js/to.js" defer></script>
     <script src="js/jquery.js" defer></script>
     <script src="js/navigation.js" defer></script>
+    <script src="js/zoomImg.js" defer></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/to.css">
 </head>
 
 <body>
-    <div id="gnb" class="position-fixed w-100 start-0 d-flex flex-wrap align-items-center justify-content-between py-4 px-5">
+    <div id="gnb" class="position-fixed w-100 start-0 d-flex flex-wrap align-items-center justify-content-between py-2 px-5">
         <a href="http://gogocha22.dothome.co.kr/tongyeong/index.html"
             class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
             <span class="logo fs-2">TongYeong</span>
@@ -39,20 +40,19 @@
             <ul class="nav nav-pills align-items-center mr-auto fs-5">
                 <li style="--i:1" class="nav-item menu-bar">
                     <a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html"
-                    class="nav-link text-decoration-none nav-title">회사 소개</a>
+                    class="nav-link text-decoration-none nav-title">소개</a>
                     <ul class="list-unstyled">
-                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html#setUp">개요</a></li>
-                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html#main-work">주요사업</a></li>
-                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html#company-intro">서비스</a></li>
+                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html#setUp">회사소개</a></li>
+                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html#historyLine">연혁</a></li>
                         <li><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html#partners">협력사&고객사</a></li>
                     </ul>
                 </li>
                 <li style="--i:2" class="nav-item menu-bar">
                     <a href="http://gogocha22.dothome.co.kr/tongyeong/business.html"
-                    class="nav-link text-decoration-none nav-title">사업영역</a>
+                    class="nav-link text-decoration-none nav-title">사업소개</a>
                     <ul class="list-unstyled">
+                        <li><a href="#">사업요약</a></li>
                         <li><a href="#">천연가스</a></li>
-                        <li><a href="#">LNG예선 서비스</a></li>
                     </ul>
                 </li>
                 <li style="--i:3" class="nav-item menu-bar">
@@ -77,11 +77,9 @@
 
     <div id="navigation">
         <ul class="list-unstyled text-center">
-            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/index.html"
-                    class="fs-2 text-decoration-none text-black-50">홈</a></li>
-            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html" class="fs-2 text-decoration-none text-black-50">소개</a></li>
-            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/to.html"
-                    class="fs-2 text-decoration-none text-black-50">예선현황</a></li>
+            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/index.html" class="fs-2 text-decoration-none text-black-50">소개</a></li>
+            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html" class="fs-2 text-decoration-none text-black-50">사업소개</a></li>
+            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/to.html" class="fs-2 text-decoration-none text-black-50">예선현황</a></li>
             <li class="nav-link"><a href="#" class="fs-2 text-decoration-none text-black-50">관리 시스템</a></li>
         </ul>
     </div>
@@ -252,7 +250,6 @@
             <div class="container py-5" id="partners">
                 <div class="position-relative d-flex align-items-center">
                     <h2 class="fw-bold fs-2 lh-1 pe-3 title">선박 사진</h2>
-                    <!-- 전문용어 필요 -->
                     <p class="fs-6 text-black-50 d-none d-lg-block">한국가스공사 통영생산기지에 기항하는 LNG운반선의 예인, 정박, 하역주요</p>
                 </div>
                 
@@ -274,26 +271,42 @@
                   <div class="tab-content" id="partners_tab_wrap_Content">
                     <div class="tab-pane fade show active" id="partners-sw" role="tabpanel" aria-labelledby="partners-sw-tab">
                         <ul class="list-unstyled py-3 nav">
-                            <li class="nav-link"><a href="#"><img src="img/tongyeong_1.jpg" alt="partners_04"></a></li>
+                            <li class="nav-link"><a><img src="img/tongyeong_1.jpg" alt="partners_04" id="zoom-img_1"></a></li>
                         </ul>
                     </div>
                     <div class="tab-pane fade" id="partners-eq" role="tabpanel" aria-labelledby="partners-eq-tab">
                         <ul class="list-unstyled py-3 nav">
-                            <li class="nav-link"><a href="#"><img src="img/tongyeong_3.jpg" alt="partners_03"></a></li>
+                            <li class="nav-link"><a><img src="img/tongyeong_3.jpg" alt="partners_03" id="zoom-img_2"></a></li>
                         </ul>
                     </div>
                     <div class="tab-pane fade" id="partners-bc" role="tabpanel" aria-labelledby="partners-bc-tab">
                         <ul class="list-unstyled py-3 nav">
-                            <li class="nav-link"><a href="#"><img src="img/tongyeong_5.jpg" alt="partners_08"></a></li>
+                            <li class="nav-link"><a><img src="img/tongyeong_5.jpg" alt="partners_08" id="zoom-img_3"></a></li>
                         </ul>
                     </div>
                     <div class="tab-pane fade" id="partners-m" role="tabpanel" aria-labelledby="partners-m-tab">
                         <ul class="list-unstyled py-3 nav">
-                            <li class="nav-link"><a href="#"><img src="img/tongyeong_7.jpg" alt="partners_07"></a></li>
+                            <li class="nav-link"><a><img src="img/tongyeong_7.jpg" alt="partners_07" id="zoom-img_4"></a></li>
                         </ul>
                     </div>
                   </div>
                 </div>
+
+                <!-- <div id="popup_01">
+                    <img src="img/tongyeong_1.jpg" alt="tongyeong_1" class="img-fluid">
+                </div>
+
+                <div id="popup_02">
+                    <img src="img/tongyeong_3.jpg" alt="tongyeong_3" class="img-fluid">
+                </div>
+
+                <div id="popup_03">
+                    <img src="img/tongyeong_5.jpg" alt="tongyeong_5" class="img-fluid">
+                </div>
+
+                <div id="popup_04">
+                    <img src="img/tongyeong_7.jpg" alt="tongyeong_7" class="img-fluid">
+                </div> -->
             </div>
         </div>
     </div>
@@ -311,10 +324,10 @@
                 </div>
                 <div class="col-lg-6 col-md-8 pt-lg-3 pt-md-3 pt-5">
                     <ul class="list-unstyled d-flex text-truncate fs-6 py-lg-2">
-                        <li class="me-3"><a href="http://gogocha22.dothome.co.kr/tongyeong/index.html"
-                                class="text-white text-decoration-none">홈</a></li>
                         <li class="me-3"><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html"
                                 class="text-white text-decoration-none">소개</a></li>
+                        <li class="me-3"><a href="http://gogocha22.dothome.co.kr/tongyeong/business.html"
+                                class="text-white text-decoration-none">사업소개</a></li>
                         <li class="me-3"><a href="http://gogocha22.dothome.co.kr/tongyeong/to.html"
                                 class="text-white text-decoration-none">예선현황</a></li>
                         <li class="me-3"><a href="#" class="text-white text-decoration-none">관리 시스템</a></li>
