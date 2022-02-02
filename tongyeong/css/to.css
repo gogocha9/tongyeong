@@ -7,7 +7,6 @@
 body {
     overflow-x: hidden;
 }
-
  /* scrollbar */
  ::-webkit-scrollbar
  {
@@ -137,47 +136,3 @@ body {
 .table_cell_center {
     display: table-cell; text-align: center; vertical-align: middle;
 }
-
-/* #popup_01 {
-    display: none;
-    transform: translateY(-30%);
-    transition: .3s;
-}
-
-#popup_02 {
-    display: none;
-    transform: translateY(-30%);
-    transition: .3s;
-}
-
-#popup_03 {
-    display: none;
-    transform: translateY(-30%);
-    transition: .3s;
-}
-
-#popup_04 {
-    display: none;
-    transform: translateY(-30%);
-    transition: .3s;
-}
-
-#popup_01.zoom {
-    display: block;
-    transform: translateY(0%);
-}
-
-#popup_02.zoom {
-    display: block;
-    transform: translateY(0%);
-}
-
-#popup_03.zoom {
-    display: block;
-    transform: translateY(0%);
-}
-
-#popup_04.zoom {
-    display: block;
-    transform: translateY(0%);
-} */
