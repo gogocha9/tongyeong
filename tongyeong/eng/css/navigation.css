@@ -1,0 +1,162 @@
+#gnb {
+    z-index: 11;
+    animation-name: toBottom;
+    animation-timing-function: ease;
+    transition: top 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#gnb.mouse {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#gnb.mouse a span {
+    color: #6c757d;
+}
+
+#gnb.mouse #menu li a {
+    color: #6c757d;
+}
+
+#gnb.mouse #menu-sm ion-icon {
+    color: #6c757d;
+}
+
+#gnb.down {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#gnb.down.active {
+    box-shadow: none;
+}
+
+#gnb.down a span {
+    color: #6c757d;
+}
+
+#gnb.down #menu li a {
+    color: #6c757d;
+}
+
+#gnb.down #menu-sm ion-icon {
+    color: #6c757d;
+}
+
+#menu-sm ion-icon {
+    color: #fff;
+    transition: .5s;
+}
+
+#gnb.active a span{
+    color: #6c757d;
+}
+
+#menu-sm.active ion-icon {
+    color: #6c757d;
+}
+
+.logo {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    transition: .5s;
+}
+
+#menu li:hover .nav-title::before,
+#menu li:focus .nav-title::before {
+    content: '';
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+#gnb.down li:hover .nav-title::before,
+#gnb.down li:focus .nav-title::before {
+    background: #6c757d;
+}
+
+#gnb.mouse li:hover .nav-title::before,
+#gnb.mouse li:focus .nav-title::before {
+    background: #6c757d;
+}
+
+#menu li:hover .nav-title::after,
+#menu li:focus .nav-title::after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    bottom: -20px;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+}
+
+#menu li:nth-child(4):hover .nav-title:after,
+#menu li:nth-child(4):focus .nav-title::after {
+    width: 0px;
+}
+
+#gnb.down li:hover .nav-title::after,
+#gnb.down li:focus .nav-title::after {
+    background: #6c757d;
+}
+
+#gnb.mouse li:hover .nav-title::after,
+#gnb.mouse li:focus .nav-title::after {
+    background: #6c757d;
+}
+
+#menu li ul {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    width: 600px;
+}
+
+#menu li ul li {
+    float: left;
+}
+
+#menu li ul li a {
+    display: block;
+    padding: 0 15px;
+    line-height: 80px;
+    font-size: 16px;
+    color: #6c757d;
+}
+
+#menu li ul a:focus,
+#menu li ul a:hover {
+    opacity: .5;
+}
+
+#menu .menu-bar {
+    animation-name: toBottom;
+    animation-timing-function: ease;
+    transition: top 0.5s;
+    animation-duration: 1s;
+    animation-delay: calc(0.25s * var(--i));
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#menu li a {
+    transition: 0.5s;
+    color: #fff;
+}
+
+.bg_gnb {
+    display: none;
+    z-index: 1;
+    width: 100%;
+    top: 64px;
+    height: 62px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 5px rgba(58, 69, 82, 0.25);
+}

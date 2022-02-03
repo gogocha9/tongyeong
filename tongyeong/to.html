@@ -18,6 +18,7 @@
         crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/language.js" defer></script>
     <script src="js/to.js" defer></script>
     <script src="js/jquery.js" defer></script>
     <script src="js/navigation.js" defer></script>
@@ -51,8 +52,8 @@
                     <a href="http://gogocha22.dothome.co.kr/tongyeong/business.html"
                     class="nav-link text-decoration-none nav-title">사업소개</a>
                     <ul class="list-unstyled">
-                        <li><a href="#">사업요약</a></li>
-                        <li><a href="#">천연가스</a></li>
+                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/business.html#main-work">사업요약</a></li>
+                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/business.html#natural-gas">천연가스</a></li>
                     </ul>
                 </li>
                 <li style="--i:3" class="nav-item menu-bar">
@@ -60,10 +61,15 @@
                     class="nav-link text-decoration-none nav-title">예선현황</a>
                     <ul class="list-unstyled">
                         <li><a href="#current">예선현황</a></li>
-                        <li><a href="#partners">선박 사진</a></li>
+                        <li><a href="#partners">선박사진</a></li>
                     </ul>
                 </li>
-                <li style="--i:4" class="nav-item menu-bar"><a href="#" class="nav-link text-decoration-none nav-title">관리시스템</a></li>
+                <li style="--i:4" class="nav-item menu-bar">
+                    <a href="http://gogocha22.dothome.co.kr/tongyeong/notice.html" class="nav-link text-decoration-none nav-title">공지사항</a>
+                </li>
+                <li style="--i:5" class="nav-item menu-bar">
+                    <a href="#" class="nav-link text-decoration-none nav-title">관리시스템</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -77,9 +83,13 @@
 
     <div id="navigation">
         <ul class="list-unstyled text-center">
-            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/index.html" class="fs-2 text-decoration-none text-black-50">소개</a></li>
-            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html" class="fs-2 text-decoration-none text-black-50">사업소개</a></li>
-            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/to.html" class="fs-2 text-decoration-none text-black-50">예선현황</a></li>
+            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html"
+                    class="fs-2 text-decoration-none text-black-50">소개</a></li>
+            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/business.html"
+                    class="fs-2 text-decoration-none text-black-50">사업소개</a></li>
+            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/to.html"
+                    class="fs-2 text-decoration-none text-black-50">예선현황</a></li>
+            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/notice.html" class="fs-2 text-decoration-none text-black-50">공지사항</a></li>
             <li class="nav-link"><a href="#" class="fs-2 text-decoration-none text-black-50">관리 시스템</a></li>
         </ul>
     </div>
@@ -301,12 +311,12 @@
     <div class="container-fluid bg-dark p-5">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="col-lg-7 col-md-5 col-sm-12">
                     <a href="http://gogocha22.dothome.co.kr/tongyeong/index.html" class="text-decoration-none">
                         <span class="logo fs-2 text-muted">TongYeong</span>
                     </a>
                 </div>
-                <div class="col-lg-6 col-md-8 pt-lg-3 pt-md-3 pt-5">
+                <div class="col-lg-5 col-md-7 pt-lg-3 pt-md-3 pt-5">
                     <ul class="list-unstyled d-flex text-truncate fs-6 py-lg-2">
                         <li class="me-3"><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html"
                                 class="text-white text-decoration-none">소개</a></li>
@@ -314,12 +324,9 @@
                                 class="text-white text-decoration-none">사업소개</a></li>
                         <li class="me-3"><a href="http://gogocha22.dothome.co.kr/tongyeong/to.html"
                                 class="text-white text-decoration-none">예선현황</a></li>
+                        <li class="me-3"><a href="http://gogocha22.dothome.co.kr/tongyeong/notice.html" class="text-white text-decoration-none">공지사항</a></li>
                         <li class="me-3"><a href="#" class="text-white text-decoration-none">관리 시스템</a></li>
                     </ul>
-                </div>
-                <div class="col-lg-3 col-md-12 col-sm-12 d-flex">
-                    <h6 class="text-white">이용약관&nbsp;&nbsp;&nbsp;</h6>
-                    <h6 class="text-white">개인정보처리방침</h6>
                 </div>
             </div>
             <div class="row py-5">
@@ -338,9 +345,9 @@
                 </div>
 
                 <div class="col-lg-3">
-                    <select class="form-select w-50">
-                        <option>한국어</option>
-                        <option>Eng</option>
+                    <select id="selectbox" name="selectbox" class="form-select w-50" onchange="chageLangSelect()">
+                        <option value="ko" selected>한국어</option>
+                        <option value="en">Eng</option>
                     </select>
                 </div>
             </div>

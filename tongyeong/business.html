@@ -18,6 +18,7 @@
         crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/language.js" defer></script>
     <script src="js/business.js" defer></script>
     <script src="js/jquery.js" defer></script>
     <script src="js/navigation.js" defer></script>
@@ -50,8 +51,8 @@
                     <a href="http://gogocha22.dothome.co.kr/tongyeong/business.html"
                     class="nav-link text-decoration-none nav-title">사업소개</a>
                     <ul class="list-unstyled">
-                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/business.html#main-work">사업요약</a></li>
-                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/business.html">천연가스</a></li>
+                        <li><a href="#main-work">사업요약</a></li>
+                        <li><a href="#natural-gas">천연가스</a></li>
                     </ul>
                 </li>
                 <li style="--i:3" class="nav-item menu-bar">
@@ -62,7 +63,12 @@
                         <li><a href="http://gogocha22.dothome.co.kr/tongyeong/to.html#partners">선박사진</a></li>
                     </ul>
                 </li>
-                <li style="--i:4" class="nav-item menu-bar"><a href="#" class="nav-link text-decoration-none nav-title">관리시스템</a></li>
+                <li style="--i:4" class="nav-item menu-bar">
+                    <a href="http://gogocha22.dothome.co.kr/tongyeong/notice.html" class="nav-link text-decoration-none nav-title">공지사항</a>
+                </li>
+                <li style="--i:5" class="nav-item menu-bar">
+                    <a href="#" class="nav-link text-decoration-none nav-title">관리시스템</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -76,11 +82,13 @@
     
     <div id="navigation">
         <ul class="list-unstyled text-center">
-            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/index.html"
+            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html"
                     class="fs-2 text-decoration-none text-black-50">소개</a></li>
-            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html" class="fs-2 text-decoration-none text-black-50">사업소개</a></li>
+            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/business.html"
+                    class="fs-2 text-decoration-none text-black-50">사업소개</a></li>
             <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/to.html"
                     class="fs-2 text-decoration-none text-black-50">예선현황</a></li>
+            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/notice.html" class="fs-2 text-decoration-none text-black-50">공지사항</a></li>
             <li class="nav-link"><a href="#" class="fs-2 text-decoration-none text-black-50">관리 시스템</a></li>
         </ul>
     </div>
@@ -209,58 +217,6 @@
 
         <div class="row py-5">
             <div class="position-relative d-flex align-items-center">
-                <h2 class="fw-bold fs-2 lh-1 pe-3 title">천연가스 성분</h2>
-                <p class="fs-6 text-black-50 d-none d-lg-block">천연가스는 해외 원산지에서 LNG상태로 KOGAS에 의해 도입됩니다</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <table class="table">
-                <tr class="text-center bg-dark text-white">
-                    <th>구분</th>
-                    <th colspan="2">LNG</th>
-                    <th colspan="2">LPG</th>
-                </tr>
-
-                <tr class="text-center">
-                    <td>주성분</td>
-                    <td>메탄(CH4)</td>
-                    <td>프로판(3H8)</td>
-                    <td>부탄(C4H10)</td>
-                </tr>
-
-                <tr class="text-center">
-                    <td>비중(공기대비)</td>
-                    <td>0.55</td>
-                    <td>1.55</td>
-                    <td>2.07</td>
-                </tr>
-
-                <tr class="text-center">
-                    <td>연소범위(%)</td>
-                    <td>5~15</td>
-                    <td>2.1~9.5</td>
-                    <td>1.8~8.4</td>
-                </tr>
-
-                <tr class="text-center">
-                    <td>발화온도(℃)</td>
-                    <td>540</td>
-                    <td>450</td>
-                    <td>405</td>
-                </tr>
-
-                <tr class="text-center">
-                    <td>액화온도(℃)</td>
-                    <td>-162</td>
-                    <td>-42</td>
-                    <td>-0.5</td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="row py-5">
-            <div class="position-relative d-flex align-items-center">
                 <h2 class="fw-bold fs-2 lh-1 pe-3 title">천연가스 이용산업</h2>
                 <p class="fs-6 text-black-50 d-none d-lg-block">천연가스는 해외 원산지에서 LNG상태로 KOGAS에 의해 도입됩니다</p>
             </div>
@@ -277,7 +233,7 @@
                 <tr class="text-center">
                     <td>냉난방</td>
                     <td>보일러</td>
-                    <td>LNG 복합화력</td>
+                    <td>LNG&nbsp;복합화력</td>
                 </tr>
 
                 <tr class="text-center">
@@ -318,12 +274,12 @@
     <div class="container-fluid bg-dark p-5">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="col-lg-7 col-md-5 col-sm-12">
                     <a href="http://gogocha22.dothome.co.kr/tongyeong/index.html" class="text-decoration-none">
                         <span class="logo fs-2 text-muted">TongYeong</span>
                     </a>
                 </div>
-                <div class="col-lg-6 col-md-8 pt-lg-3 pt-md-3 pt-5">
+                <div class="col-lg-5 col-md-7 pt-lg-3 pt-md-3 pt-5">
                     <ul class="list-unstyled d-flex text-truncate fs-6 py-lg-2">
                         <li class="me-3"><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html"
                                 class="text-white text-decoration-none">소개</a></li>
@@ -331,12 +287,9 @@
                                 class="text-white text-decoration-none">사업소개</a></li>
                         <li class="me-3"><a href="http://gogocha22.dothome.co.kr/tongyeong/to.html"
                                 class="text-white text-decoration-none">예선현황</a></li>
+                        <li class="me-3"><a href="http://gogocha22.dothome.co.kr/tongyeong/notice.html" class="text-white text-decoration-none">공지사항</a></li>
                         <li class="me-3"><a href="#" class="text-white text-decoration-none">관리 시스템</a></li>
                     </ul>
-                </div>
-                <div class="col-lg-3 col-md-12 col-sm-12 d-flex">
-                    <h6 class="text-white">이용약관&nbsp;&nbsp;&nbsp;</h6>
-                    <h6 class="text-white">개인정보처리방침</h6>
                 </div>
             </div>
             <div class="row py-5">
@@ -355,9 +308,9 @@
                 </div>
 
                 <div class="col-lg-3">
-                    <select class="form-select w-50">
-                        <option>한국어</option>
-                        <option>Eng</option>
+                    <select id="selectbox" name="selectbox" class="form-select w-50" onchange="chageLangSelect()">
+                        <option value="ko" selected>한국어</option>
+                        <option value="en">Eng</option>
                     </select>
                 </div>
             </div>
