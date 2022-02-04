@@ -19,12 +19,12 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="js/language.js" defer></script>
-    <script src="js/index.js" defer></script>
+    <script src="js/intro.js" defer></script>
     <script src="js/jquery.js" defer></script>
     <script src="js/navigation.js" defer></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/navigation.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/intro.css">
 </head>
 
 <body>
@@ -76,26 +76,6 @@
         </a>
     </div>
 
-    <!-- header -->
-    <div id="header" class="container-fluid position-relative">
-        <div class="row opacity-0 mb-5">
-            <h1>display none</h1>
-        </div>
-        <div class="d-flex flex-wrap justify-content-center py-lg-5 text-center">
-            <div class="container w-auto d-flex flex-wrap justify-content-center align-items-center" id="intro">
-                <h1 class="text-white fs-1 text-center py-3 fw-bold">통영예선은 귀하의 충실한 동반자입니다.</h1>
-                <p class="text-white fs-5 px-sm-0 w-100">당사는 한국가스공사 통영기지에 기항하는 LNG 운반선의 안전한 입,출항을 위한 예선지원을 위하여 2001년 7월
-                    13일 설립하였습니다</p>
-            </div>
-        </div>
-
-        <div class="container-fluid position-absolute bottom-0 start-50 pb-4 translate-middle-x text-center">
-            <a href="#line">
-                <ion-icon name="chevron-down-outline" class="text-white fs-2" id="toButtom"></ion-icon>
-            </a>
-        </div>
-    </div>
-
     <div id="navigation">
         <ul class="list-unstyled text-center">
             <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html"
@@ -109,110 +89,120 @@
         </ul>
     </div>
 
+    <!-- header -->
+    <div class="container-fluid position-relative d-flex justify-content-center align-items-center flex-column" id="header">
+        
+        <div id="intro" class="text-center">
+            <h1 id="title" class="text-white fw-bold">소개</h1>
+            <p class="text-white fs-5 text-center d-none d-lg-block">한국가스공사 통영생산기지에 기항하는 LNG운반선의 예인, 정박, 하역주요</p>
+        </div>
+        <div class="container-fluid position-absolute bottom-0 start-50 pb-4 translate-middle-x text-center">
+            <a href="#historyLine">
+                <ion-icon name="chevron-down-outline" class="text-white fs-2" id="toButtom"></ion-icon>
+            </a>
+        </div>
+    </div>
+
     <!-- section -->
-    <div class="row py-1 opacity-0" id="line">
+    <div class="container py-5" id="historyLine">
+        <div class="row mb-5">
+            <div class="position-relative d-flex align-items-center">
+                <h2 class="fw-bold fs-2 lh-1 pe-3 title">연혁</h2>
+                <p class="fs-6 text-black-50 d-none d-lg-block">한국가스공사 통영생산기지에 기항하는 LNG운반선의 예인, 정박, 하역주요</p>
+            </div>
+        </div>
+
+        <ul id="history">
+            <li>
+                <h4>2016</h4>
+                <p>제 7대 대표이사 김영철 취임</p>
+            </li>
+
+            <li>
+                <h4>2013</h4>
+                <p>제 6대 대표이사 김영철 취임</p>
+            </li>
+
+            <li>
+                <h4>2011</h4>
+                <p>제 5대 대표이사 장석효 취임</p>
+            </li>
+
+            <li>
+                <h4>2009</h4>
+                <p>제 4대 대표이사 김효원 취임</p>
+                <p>해상사업소 신사옥(통영) 이전</p>
+                <p>114척 LNG선예인서비스</p>
+            </li>
+
+            <li>
+                <h4>2008</h4>
+                <p>통영9호(4500HP)인수</p>
+                <p>통영11호(4500HP)인수</p>
+                <p>114척 LNG선예인서비스</p>
+            </li>
+
+            <li>
+                <h4>2007</h4>
+                <p>제 3대 대표이사 이상범 취임</p>
+                <p>임원교체 선임: 상임 2명, 비상임 4명</p>
+                <p>98척 LNG선예인서비스</p>
+            </li>
+
+            <li>
+                <h4>2006</h4>
+                <p>본사 이전 - 서울시 서초구 서초동 1685-8번지 G-5<br>센트럴플라자 217호</p>
+                <p>92척 LNG선예인서비스</p>
+            </li>
+
+            <li>
+                <h4>2005</h4>
+                <p>본사 이전 - 서울시 서초구 서초동 1685-8번지<br> G-5 센트럴플라자 520호</p>
+                <p>80척 LNG선예인서비스</p>
+            </li>
+
+            <li>
+                <h4>2004</h4>
+                <p>말레이시아 MLNG사와 예선사용계약 체결</p>
+                <p>제 2대 대표이사 송원종 취임</p>
+                <p>79척 LNG선예인 서비스</p>
+                <p>임원교체선임: 상임2명, 비상임 2명</p>
+            </li>
+
+            <li>
+                <h4>2003</h4>
+                <p>55척 LNG선예인서비스</p>
+                <p>통영 태풍재해 구조활동</p>
+            </li>
+
+            <li>
+                <h4>2002</h4>
+                <p>통영 1,3호 진수</p>
+                <p>통영 1,3호 인수</p>
+                <p>예선업 등록(마산지방 해운항만청)</p>
+                <p>보세 운송업자 등록(거제세관)</p>
+                <p>SK해운과 예선사용계약 체결</p>
+                <p>통영 5, 7호 진수</p>
+                <p>통영 5, 7호 인수</p>
+                <p>대한해운, 현대상선과 예선 사용계약 체결</p>
+                <p>LNG선 예선영업 개시(YK SOVEREIGN - SK해운)</p>
+                <p>한진해운과 예선사용계약 체결</p>
+            </li>
+
+            <li>
+                <h4>2001</h4>
+                <p>통영 LNG 생산기지 예선법인 설립추진<br> 위원회 발족</p>
+                <p>회사명을 "통영예선주식회사"로 확정</p>
+                <p>임원 선임(상임 : 2명, 비상임 : 4명)</p>
+                <p>법원에 회사등기 완료(자본금 : 20억원)</p>
+                <p>연수조선 주식회사와 4,200마력 예인선<br> 4척의 신조 계약 체결</p>
+                <p>예인선 착공식 거행</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="py-5 opacity-0">
         <h1>asdf</h1>
-    </div>
-    <div class="container mt-5" id="company-intro">
-        <div class="row pt-5">
-            <div class="position-relative d-flex align-items-center">
-                <h2 class="fw-bold fs-2 lh-1 pe-3 title">통영예선을 소개합니다</h2>
-                <p class="fs-6 text-black-50 d-none d-lg-block">한국가스공사 통영생산기지에 기항하는 LNG운반선의 예인, 정박, 하역주요</p>
-            </div>
-        </div>
-
-        <div id="explain_01" class="row g-0">
-            <div class="d-flex justify-content-center align-items-center">
-                <div class="col-lg-6 d-none d-lg-block text-center">
-                    <img src="img/section_01.jpg" alt="section_01" style="width: 580px;" class="img-fluid rounded-1">
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="fs-2 pb-4">회사소개</h1>
-                    <p class="w-75 pb-3 fs-5">당사는 한국가스공사 통영기지에 기항하는 LNG 운반선의 안전한 입, 출항을 위한 예선지원을 위하여 2001년 7월 13일
-                        설립하였습니다</p>
-                    <a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html#setUp" class="d-flex align-items-center text-decoration-none"><span
-                            class="learn rounded-1 border border-dark fs-5 fw-bold px-2 py-1 border-3">더 알아보기</span></a>
-                </div>
-            </div>
-        </div>
-
-        <div id="explain_02" class="row g-0">
-            <div class="col-lg-6 p-2 d-flex justify-content-center align-items-center">
-                <div class="col-lg-1 d-none d-lg-block opacity-0">
-                    <h1>asdf</h1>
-                </div>
-                <div class="col-lg-11 ps-lg-4">
-                    <h1 class="fs-2 pb-4">주요사업</h1>
-                    <p class="w-75 pb-3 fs-5">한진해운, 대한해운, 현대상선, SK해운과 가스공사 통영 LNG 생산기지에서의 예선사용 계약 체결</p>
-                    <a href="http://gogocha22.dothome.co.kr/tongyeong/business.html#main-work" class="d-flex align-items-center text-decoration-none"><span
-                            class="learn rounded-1 border border-dark fs-5 fw-bold px-2 py-1 border-3">더 알아보기</span></a>
-                </div>
-            </div>
-            <div class="col-lg-6 d-none d-lg-block">
-                <img src="img/section_02.jpg" alt="section_02" style="width: 580px;" class="img-fluid rounded-1">
-            </div>
-        </div>
-
-        <div class="row d-flex justify-content-lg-around justify-content-center align-items-center py-5" id="profile">
-            <div class="row py-5">
-                <div class="position-relative d-flex align-items-center">
-                    <h2 class="fw-bold fs-2 lh-1 pe-3 title">통영예선 사업소개</h2>
-                    <p class="fs-6 text-black-50 d-none d-lg-block">한국가스공사 통영생산기지에 기항하는 LNG운반선의 예인, 정박, 하역주요</p>
-                </div>
-            </div>
-            <div class="card p-0 pf-hover my-md-0 my-5" style="width: auto;">
-                <a href="http://gogocha22.dothome.co.kr/tongyeong/business.html#company-intro" class="text-decoration-none overflow-hidden">
-                    <img src="img/intro_tongyeong_01.jpg" alt="profile_01" style="width: 350px; height: 400px;">
-                    <div class="card-body text-center bg-white pf-link-box">
-                        <span class="pf-link fs-4">예선업</span>
-                    </div>
-                </a>
-            </div>
-            <div class="card p-0 pf-hover my-md-0 my-5" style="width: auto;">
-                <a href="http://gogocha22.dothome.co.kr/tongyeong/business.html#company-intro" class="text-decoration-none overflow-hidden">
-                    <img src="img/intro_tongyeong_02.jpg" alt="profile_02" style="width: 350px; height: 400px;">
-                    <div class="card-body text-center bg-white pf-link-box">
-                        <span class="pf-link fs-4">해운업</span>
-                    </div>
-                </a>
-            </div>
-            <div class="card p-0 pf-hover my-md-0 my-5" style="width: auto;">
-                <a href="http://gogocha22.dothome.co.kr/tongyeong/business.html#company-intro" class="text-decoration-none overflow-hidden">
-                    <img src="img/intro_tongyeong_03.jpg" alt="profile_03" style="width: 350px; height: 400px;">
-                    <div class="card-body text-center bg-white pf-link-box">
-                        <span class="pf-link fs-4">LNG선 예인 서비스</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="container pt-5" id="customers">
-        <div class="row py-5">
-            <div class="position-relative d-flex align-items-center">
-                <h2 class="fw-bold fs-2 lh-1 pe-3 title">찾아오시는 길</h2>
-                <p class="fs-6 text-black-50 d-none d-lg-block">한국가스공사 통영생산기지에 기항하는 LNG운반선의 예인, 정박, 하역주요</p>
-            </div>
-        </div>
-
-        <div class="row py-5 p-lg-5 p-1">
-            <div class="z-depth-1-half map-container col-lg-5">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.530084972756!2d127.01421411526768!3d37.49541407981115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1685a9681bb%3A0x42ccb72f763d621!2z7Ya17JiB7JiI7ISgKOyjvCk!5e0!3m2!1sko!2skr!4v1642738357767!5m2!1sko!2skr"
-                    height="300" style="border:0;">
-                </iframe>
-            </div>
-            <div class="col-lg-7 ps-lg-5 pe-0 p-lg-0 pt-5">
-                <h5>회사</h5>
-                <p>Tel. &nbsp; 02-533-4390 &nbsp;&nbsp; Fax. &nbsp; 02-533-4722</p>
-                <h5>이메일</h5>
-                <p>gogocha9@naver.com</p>
-                <h5>주소</h5>
-                <p>서울 서초구 서초중앙로24길 27, 217호</p>
-                <h5>교통</h5>
-                <p>지하철: 고속터미널역(3호선) 교대역</p>
-                <p>버스: 법조단지 정류장 1km 이내</p>
-            </div>
-        </div>
     </div>
 
     <!-- footer -->
