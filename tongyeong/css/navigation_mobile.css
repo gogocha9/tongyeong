@@ -12,8 +12,8 @@
 }
 
 #navigation.down {
-    height: calc(100% - 58.16px);
-    top: 58.16px;
+    height: calc(100% - 64px);
+    top: 64px;
 }
 
 #navigation .nav-main {

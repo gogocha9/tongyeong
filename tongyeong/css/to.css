@@ -86,6 +86,10 @@ body {
     animation-iteration-count: infinite;
 }
 
+.zoom-img {
+    width: 100%;
+}
+
 @keyframes toBottom {
     0% {
         transform: translateY(-50%);
@@ -113,6 +117,25 @@ body {
     }
 }
 
+@media (max-width: 568px) {
+    .zoom-img {
+        width: 300px;
+        height: 200px;
+    }
+}
+
 .table_cell_center {
     display: table-cell; text-align: center; vertical-align: middle;
 }
+
+.tab {position: relative; top: 16px;}
+.tab ul {display: flex; flex-wrap: wrap; border-top: 1px solid #ccc; border-left: 1px solid #ccc;}
+.tab ul li {width: 25%; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; box-sizing: border-box;}
+.tab ul li button {width: 100%; background: none; height: 58px; text-align: center; font-size: 18px; color: #666; box-sizing: border-box; outline: 0; cursor: pointer; border: none;}
+.tab ul li button:focus,
+.tab ul li.on button {font-weight: bold;}
+.tab_content {display: none; text-align: center;}
+.tab_content.on {display: block;}
+
+.ie9 .tab ul:after {content: ""; display: block; clear: both;}
+.ie9 .tab ul li {float: left;}

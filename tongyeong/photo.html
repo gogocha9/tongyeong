@@ -23,6 +23,7 @@
     <script src="js/jquery.js" defer></script>
     <script src="js/navigation.js" defer></script>
     <script src="js/navigation_mobile.js" defer></script>
+    <script src="js/tab.js" defer></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/navigation_mobile.css">
@@ -124,53 +125,37 @@
             <p class="text-white fs-5 text-center d-none d-lg-block">한국가스공사 통영생산기지에 기항하는 LNG운반선의 예인, 정박, 하역주요</p>
         </div>
         <div class="container-fluid position-absolute bottom-0 start-50 pb-4 translate-middle-x text-center">
-            <a href="#current">
+            <a href="#partners">
                 <ion-icon name="chevron-down-outline" class="text-white fs-2" id="toButtom"></ion-icon>
             </a>
         </div>
     </div>
 
     <!-- section -->
-        <div class="container">
-            <div class="py-5" id="partners">
-                <div class="py-5">
-                <ul class="nav nav-tabs" id="partners_tab_wrap" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link text-muted active" id="partners-sw-tab" data-bs-toggle="tab" data-bs-target="#partners-sw" type="button" role="tab" aria-controls="partners-sw" aria-selected="true">통영 1호</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link text-muted" id="partners-eq-tab" data-bs-toggle="tab" data-bs-target="#partners-eq" type="button" role="tab" aria-controls="partners-eq" aria-selected="false">통영 3호</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link text-muted" id="partners-bc-tab" data-bs-toggle="tab" data-bs-target="#partners-bc" type="button" role="tab" aria-controls="partners-bc" aria-selected="false">통영 5호</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link text-muted" id="partners-m-tab" data-bs-toggle="tab" data-bs-target="#partners-m" type="button" role="tab" aria-controls="partners-m" aria-selected="false">통영 7호</button>
-                    </li>
-                  </ul>
-                  <div class="tab-content" id="partners_tab_wrap_Content">
-                    <div class="tab-pane fade show active" id="partners-sw" role="tabpanel" aria-labelledby="partners-sw-tab">
-                        <ul class="list-unstyled py-3 nav">
-                            <li class="nav-link"><a><img src="img/tongyeong_1.jpg" alt="partners_04" id="zoom-img_1"></a></li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane fade" id="partners-eq" role="tabpanel" aria-labelledby="partners-eq-tab">
-                        <ul class="list-unstyled py-3 nav">
-                            <li class="nav-link"><a><img src="img/tongyeong_3.jpg" alt="partners_03" id="zoom-img_2"></a></li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane fade" id="partners-bc" role="tabpanel" aria-labelledby="partners-bc-tab">
-                        <ul class="list-unstyled py-3 nav">
-                            <li class="nav-link"><a><img src="img/tongyeong_5.jpg" alt="partners_08" id="zoom-img_3"></a></li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane fade" id="partners-m" role="tabpanel" aria-labelledby="partners-m-tab">
-                        <ul class="list-unstyled py-3 nav">
-                            <li class="nav-link"><a><img src="img/tongyeong_7.jpg" alt="partners_07" id="zoom-img_4"></a></li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
+    <div class="container py-5">
+        <div class="row" id="partners">
+            <nav class="tab">
+                <ul class="list-unstyled">
+                    <li><button>통영 1호선</button></li>
+                    <li><button>통영 3호선</button></li>
+                    <li><button>통영 5호선</button></li>
+                    <li><button>통영 7호선</button></li>
+                </ul>
+            </nav>
+            <div class="tab_content on">
+                <img src="img/tongyeong_1.jpg" alt="partners_01" class="zoom-img">
+            </div>
+
+            <div class="tab_content">
+                <img src="img/tongyeong_3.jpg" alt="partners_03" class="zoom-img">
+            </div>
+
+            <div class="tab_content">
+                <img src="img/tongyeong_5.jpg" alt="partners_05" class="zoom-img">
+            </div>
+
+            <div class="tab_content">
+                <img src="img/tongyeong_7.jpg" alt="partners_07" class="zoom-img">
             </div>
         </div>
     </div>
