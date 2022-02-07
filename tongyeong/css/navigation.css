@@ -1,4 +1,5 @@
 #gnb {
+    height: 58.16px;
     z-index: 11;
     animation-name: toBottom;
     animation-timing-function: ease;
@@ -47,10 +48,6 @@
 #menu-sm ion-icon {
     color: #fff;
     transition: .5s;
-}
-
-#gnb.active a span{
-    color: #6c757d;
 }
 
 #menu-sm.active ion-icon {

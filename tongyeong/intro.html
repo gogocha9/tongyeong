@@ -22,13 +22,15 @@
     <script src="js/intro.js" defer></script>
     <script src="js/jquery.js" defer></script>
     <script src="js/navigation.js" defer></script>
+    <script src="js/navigation_mobile.js" defer></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/navigation_mobile.css">
     <link rel="stylesheet" href="css/intro.css">
 </head>
 
 <body>
-    <div id="gnb" class="position-fixed w-100 start-0 d-flex flex-wrap align-items-center justify-content-between py-2 px-5">
+    <div id="gnb" class="position-fixed w-100 start-0 d-flex flex-wrap align-items-center justify-content-between py-2 px-3">
         <a href="http://gogocha22.dothome.co.kr/tongyeong/index.html"
             class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
             <span class="logo fs-2">TongYeong</span>
@@ -39,21 +41,21 @@
         <div class="d-none d-lg-block" id="menu">
             <ul class="nav nav-pills align-items-center mr-auto fs-5">
                 <li style="--i:1" class="nav-item menu-bar">
-                    <a class="nav-link text-decoration-none nav-title">소개</a>
+                    <a class="nav-link text-decoration-none nav-title" style="cursor: pointer;">소개</a>
                     <ul class="list-unstyled">
-                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html">회사소개</a></li>
-                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/history.html">연혁</a></li>
+                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html#setUp">회사소개</a></li>
+                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/history.html#historyLine">연혁</a></li>
                     </ul>
                 </li>
                 <li style="--i:2" class="nav-item menu-bar">
-                    <a class="nav-link text-decoration-none nav-title">사업소개</a>
+                    <a class="nav-link text-decoration-none nav-title" style="cursor: pointer;">사업소개</a>
                     <ul class="list-unstyled">
                         <li><a href="http://gogocha22.dothome.co.kr/tongyeong/business.html">주요사업</a></li>
                         <li><a href="http://gogocha22.dothome.co.kr/tongyeong/performance.html">사업실적</a></li>
                     </ul>
                 </li>
                 <li style="--i:3" class="nav-item menu-bar">
-                    <a class="nav-link text-decoration-none nav-title">예선현황</a>
+                    <a class="nav-link text-decoration-none nav-title" style="cursor: pointer;">예선현황</a>
                     <ul class="list-unstyled">
                         <li><a href="http://gogocha22.dothome.co.kr/tongyeong/to.html">예선현황</a></li>
                         <li><a href="http://gogocha22.dothome.co.kr/tongyeong/photo.html">선박사진</a></li>
@@ -77,15 +79,41 @@
     </div>
 
     <div id="navigation">
-        <ul class="list-unstyled text-center">
-            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html"
-                    class="fs-2 text-decoration-none text-black-50">소개</a></li>
-            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/business.html"
-                    class="fs-2 text-decoration-none text-black-50">사업소개</a></li>
-            <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/to.html"
-                    class="fs-2 text-decoration-none text-black-50">예선현황</a></li>
+        <ul class="list-unstyled">
+            <li class="nav-link">
+                <div class="nav-main">
+                    <a class="fs-2 text-decoration-none text-black-50">소개</a>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <ul class="nav-sub list-unstyled">
+                    <li><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html#historyLine">회사소개</a></li>
+                    <li><a href="http://gogocha22.dothome.co.kr/tongyeong/history.html#historyLine">연혁</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-link">
+                <div class="nav-main">
+                    <a class="fs-2 text-decoration-none text-black-50">사업소개</a>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <ul class="nav-sub list-unstyled">
+                    <li><a href="http://gogocha22.dothome.co.kr/tongyeong/business.html">주요사업</a></li>
+                    <li><a href="http://gogocha22.dothome.co.kr/tongyeong/performance.html">사업실적</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-link">
+                <div class="nav-main">
+                    <a class="fs-2 text-decoration-none text-black-50">예선현황</a>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <ul class="nav-sub list-unstyled">
+                    <li><a href="http://gogocha22.dothome.co.kr/tongyeong/to.html">예선현황</a></li>
+                    <li><a href="http://gogocha22.dothome.co.kr/tongyeong/photo.html">선박사진</a></li>
+                </ul>
+            </li>
             <li class="nav-link"><a href="http://gogocha22.dothome.co.kr/tongyeong/notice.html" class="fs-2 text-decoration-none text-black-50">공지사항</a></li>
-            <li class="nav-link"><a href="#" class="fs-2 text-decoration-none text-black-50">관리 시스템</a></li>
+            <li class="nav-link"><a href="http://tms.ttug.co.kr:8190/tug/main/" class="fs-2 text-decoration-none text-black-50">관리 시스템</a></li>
         </ul>
     </div>
 
@@ -93,7 +121,7 @@
     <div class="container-fluid position-relative d-flex justify-content-center align-items-center flex-column" id="header">
         
         <div id="intro" class="text-center">
-            <h1 id="title" class="text-white fw-bold">소개</h1>
+            <h1 id="title" class="text-white fw-bold">회사소개</h1>
             <p class="text-white fs-5 text-center d-none d-lg-block">한국가스공사 통영생산기지에 기항하는 LNG운반선의 예인, 정박, 하역주요</p>
         </div>
         <div class="container-fluid position-absolute bottom-0 start-50 pb-4 translate-middle-x text-center">
@@ -103,62 +131,37 @@
         </div>
     </div>
 
-    <!-- section -->
-    <div class="container py-5" id="setUp">
-        <div class="row mb-5">
-            <div class="position-relative d-flex align-items-center">
-                <h2 class="fw-bold fs-2 lh-1 pe-3 title">회사소개</h2>
-                <p class="fs-6 text-black-50 d-none d-lg-block">한국가스공사 통영생산기지에 기항하는 LNG운반선의 예인, 정박, 하역주요</p>
-            </div>
-        </div>
-        <div class="d-flex justify-content-center align-items-center">
-            <div class="text-center w-75 d-flex align-items-center justify-content-center flex-column py-5" id="box_01">
-                <h1 class="fw-bold px-lg-5 px-0 d-block">2001년 예선 서비스를 시작한 통영예선㈜은</h1>
-                <h1 class="fw-bold px-lg-5 px-0 d-block">LNG운반서비스의 예인, 정박과 하역주요</h1>
-                <h1 class="fw-bold px-lg-5 px-0 d-block">혁신에 앞장서 왔습니다.</h1>
-                <p class="mt-3">고객에게 감동을 드리는 서비스로 신뢰에 보답하겠습니다.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container py-5" id="historyLine">
-        <div class="row mb-5">
-            <div class="position-relative d-flex align-items-center">
-                <h2 class="fw-bold fs-2 lh-1 pe-3 title">대표이사 인사</h2>
-                <p class="fs-6 text-black-50 d-none d-lg-block">한국가스공사 통영생산기지에 기항하는 LNG운반선의 예인, 정박, 하역주요</p>
-            </div>
-        </div>
-
+    <div class="container pt-5 pb-3" id="setUp">
         <div class="row py-4 text-center">
-            <h2>통영예선 주식회사는 고객의 자산과 서비스를 소중하게 생각하는 기업입니다.</h2>
+            <h2 id="ceo-title">통영예선 주식회사는 고객의 자산과 서비스를 소중하게 생각하는 기업입니다.</h2>
         </div>
 
         <div class="row pt-5 d-block d-lg-flex align-items-center text-center">
             <div class="col-12 col-lg-6" id="ceo-img">
                 <img src="img/ceo.jpg" alt="ceo">
             </div>
-            <div class="col-12 col-lg-6 px-md-5 px-1">
-                <div id="ceo" class="row pt-3 fs-4">
+            <div class="col-12 col-lg-6 px-md-5 px-4">
+                <div id="ceo" class="row pt-3">
                     <p>고객의 귀한 자산을 안전하게 정박하는 역할 수행자의 자부심과 긍지를 가지고
                     한치의 오차가 없는 완벽한 서비스에 오늘도 전념하고 있습니다.
                     우리의 사명과 역할을 다하기 위해 보이지 않는 곳에서 묵묵히 길을 개척하여 나아가는 
                     개척자 정신으로 위험 Zero의 접안 서비스에 만전을 다하겠습니다.</p>
                 </div>
     
-                <div class="row pt-5">
-                    <p class="fs-5">통영예선 대표이사 <span class="fs-2 fw-bold">김영철</span></p>
+                <div class="row pt-3" id="ceo-name">
+                    <p>통영예선 대표이사 <span class="fw-bold">김영철</span></p>
                     <!-- 옆에 서명이 들어갈 예정 -->
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="py-5 opacity-0">
+    <div class="py-2 opacity-0">
         <h1>asdf</h1>
     </div>
 
     <!-- footer -->
-    <div class="container-fluid bg-dark p-5">
+    <div class="container-fluid bg-dark py-3 px-3">
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-lg-7 col-md-5 col-sm-12">
@@ -166,39 +169,9 @@
                         <span class="logo fs-2 text-muted">TongYeong</span>
                     </a>
                 </div>
-                <div class="col-lg-5 col-md-7 pt-lg-3 pt-md-3 pt-5">
-                    <ul class="list-unstyled d-flex text-truncate fs-6 py-lg-2">
-                        <li class="me-3"><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html"
-                                class="text-white text-decoration-none">소개</a></li>
-                        <li class="me-3"><a href="http://gogocha22.dothome.co.kr/tongyeong/business.html"
-                                class="text-white text-decoration-none">사업소개</a></li>
-                        <li class="me-3"><a href="http://gogocha22.dothome.co.kr/tongyeong/to.html"
-                                class="text-white text-decoration-none">예선현황</a></li>
-                        <li class="me-3"><a href="http://gogocha22.dothome.co.kr/tongyeong/notice.html" class="text-white text-decoration-none">공지사항</a></li>
-                        <li class="me-3"><a href="#" class="text-white text-decoration-none">관리 시스템</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row py-5">
                 <div class="col-lg-5">
-                    <h6 class="text-muted">서울특별시 서초구 서초동 1685-8 통영예선(주)</h6>
-                    <p class="fs-6 text-muted">Copyright ⓒ2004 Tong Yeong All rights Reserved</p>
-                </div>
-
-                <div class="col-lg-4">
-                    <p>
-                        <a href="http://validator.kldp.org/check?uri=referer"
-                            onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))"><img
-                                src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5"
-                                height="15" width="80"></a>
-                    </p>
-                </div>
-
-                <div class="col-lg-3">
-                    <select id="selectbox" name="selectbox" class="form-select w-50" onchange="chageLangSelect()">
-                        <option value="ko" selected>한국어</option>
-                        <option value="en">Eng</option>
-                    </select>
+                    <h6 class="text-muted">서울특별시 서초구 서초동 1685-8</h6>
+                    <p class="fs-6 text-muted">© Tong Yeong Co., Ltd.</p>
                 </div>
             </div>
         </div>

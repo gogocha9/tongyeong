@@ -10,9 +10,11 @@ window.onscroll = function() {
     if(window.scrollY > 0) {
         toTop.classList.add('down');
         gnb.classList.add('down');
+        navigation.classList.add('down');
     } else if (window.scrollY === 0) {
         gnb.classList.remove('down');
         toTop.classList.remove('down');
+        navigation.classList.remove('down');
     }
 }
 
