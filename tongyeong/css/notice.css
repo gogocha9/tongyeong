@@ -48,6 +48,8 @@ body {
 }
 
 #toTop {
+    position: relative;
+    z-index: 1;
     transition: 0.5s;
     display: none;
 }
@@ -96,6 +98,51 @@ body {
     }
 }
 
+.board_list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.board_list .board_top {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0 0 0;
+}
+
+.board_list p {
+    text-align: center;
+    font-size: 15px;
+    color: #222;
+}
+
+.board_list .board_top p {
+    font-weight: bold;
+}
+
+.board_list .board_num {
+    width: 95px;
+}
+
+.board_list .board_tit {
+    width: 100%;
+}
+
+.board_list .board_date {
+    width: 140px;
+}
+
+.board_list .board_view {
+    width: 100px;
+}
+
+.board_list .board_item {
+    display: flex;
+    padding: 20px 0;
+}
+
 @keyframes toBottom-infinite {
     0%, 100% {
         transform: translateY(-20%);
@@ -110,6 +157,14 @@ body {
     html, body {
     width: auto !important;
     overflow-x: hidden !important;
+    }
+
+    #setUp table tr:nth-child(1) {
+        display: none;
+    }
+
+    #setUp table tr td:nth-child(1) {
+        display: none;
     }
 }
 

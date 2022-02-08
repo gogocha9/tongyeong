@@ -10,7 +10,7 @@
 }
 
 #gnb.mouse {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 #gnb.mouse a span {
@@ -26,7 +26,7 @@
 }
 
 #gnb.down {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 #gnb.down.active {
@@ -156,6 +156,12 @@
     width: 100%;
     top: 64px;
     height: 62px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 1px 5px rgba(58, 69, 82, 0.25);
+}
+
+@media (max-width: 568px) {
+    .logo {
+        margin-top: 5px;
+    }
 }

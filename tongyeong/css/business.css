@@ -35,7 +35,7 @@ body {
 }
 
 #header #title {
-    font-size: 4rem;
+    font-size: 3.2rem;
     letter-spacing: 10px;
 }
 
@@ -49,6 +49,8 @@ body {
 }
 
 #toTop {
+    position: relative;
+    z-index: 1;
     transition: 0.5s;
     display: none;
 }
@@ -75,10 +77,6 @@ body {
     animation-delay: .8s;
     animation-fill-mode: forwards;
     opacity: 0;
-}
-
-#intro h1{
-    font-size: 2em;
 }
 
 #toButtom {
@@ -175,4 +173,29 @@ body {
     background-position: 50%;
     background-repeat: no-repeat;
     border-radius: 5px;
+}
+
+#myChart {
+    position: relative;
+}
+
+#graph {
+    display: flex;
+    justify-content: center;
+}
+
+#graph canvas {
+    width: 800px;
+}
+
+@media (max-width: 991px) {
+    #graph canvas {
+        width: 550px;
+    }   
+}
+
+@media (max-width: 568px) {
+    #graph canvas {
+        width: 300px;
+    }   
 }
