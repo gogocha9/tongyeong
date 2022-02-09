@@ -45,7 +45,7 @@
                 <li style="--i:1" class="nav-item menu-bar">
                     <a class="nav-link text-decoration-none nav-title" style="cursor: pointer;">소개</a>
                     <ul class="list-unstyled">
-                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html">회사소개</a></li>
+                        <li><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html">인사말</a></li>
                         <li><a href="http://gogocha22.dothome.co.kr/tongyeong/history.html">연혁</a></li>
                     </ul>
                 </li>
@@ -67,7 +67,7 @@
                     <a href="http://gogocha22.dothome.co.kr/tongyeong/notice.html" class="nav-link text-decoration-none nav-title">공지사항</a>
                 </li>
                 <li style="--i:5" class="nav-item menu-bar">
-                    <a href="#" class="nav-link text-decoration-none nav-title">관리시스템</a>
+                    <a href="http://tms.ttug.co.kr:8190/tug/main/" class="nav-link text-decoration-none nav-title">관리시스템</a>
                 </li>
             </ul>
         </div>
@@ -88,7 +88,7 @@
                     <ion-icon name="chevron-down-outline"></ion-icon>
                 </div>
                 <ul class="nav-sub list-unstyled">
-                    <li><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html">회사소개</a></li>
+                    <li><a href="http://gogocha22.dothome.co.kr/tongyeong/intro.html">인사말</a></li>
                     <li><a href="http://gogocha22.dothome.co.kr/tongyeong/history.html">연혁</a></li>
                 </ul>
             </li>
@@ -135,7 +135,10 @@
 
     <!-- section -->
     <div class="container py-5">
-        <ul class="nav nav-tabs" id="customers_tab_wrap" role="tablist">
+        <div class="position-relative">
+            <h2 class="title">선박 LNG선예인서비스 건 수</h2>
+        </div>
+        <ul class="nav nav-tabs pt-5" id="customers_tab_wrap" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link text-black-50 active" id="customers-sw-tab" data-bs-toggle="tab" data-bs-target="#customers-sw" type="button" role="tab" aria-controls="customers-sw" aria-selected="true">국내</button>
             </li>
@@ -146,30 +149,36 @@
 
         <div class="tab-content border-bottom" id="customers_tab_wrap_Content">
             <div class="tab-pane fade show active" id="customers-sw" role="tabpanel" aria-labelledby="customers-sw-tab">
-                <ul class="list-unstyled py-3 nav">
-                    <li class="nav-link"><a href="#"><img src="img/partners_04.gif" alt="partners_04"></a></li>
-                    <li class="nav-link"><a href="#"><img src="img/partners_01.gif" alt="partners_01"></a></li>
-                    <li class="nav-link"><a href="#"><img src="img/partners_08.gif" alt="partners_08"></a></li>
-                    <li class="nav-link"><a href="#"><img src="img/partners_02.gif" alt="partners_02"></a></li>
+                <ul class="list-unstyled py-3 nav border-bottom d-flex justify-content-center">
+                    <li class="nav-link"><a href="http://www.korealines.co.kr/default/"><img src="img/partners_04.gif" alt="partners_04"></a></li>
+                    <li class="nav-link"><a href="https://www.kgu.or.kr/"><img src="img/partners_01.gif" alt="partners_01"></a></li>
+                    <li class="nav-link"><a href="https://masan.mof.go.kr/ko/index.do"><img src="img/partners_08.gif" alt="partners_08"></a></li>
+                    <li class="nav-link"><a href="https://www.kogas.or.kr:9450/portal/index.do"><img src="img/partners_02.gif" alt="partners_02"></a></li>
                 </ul>
                 <div class="text-center py-3">
-                    <h4>국내 선박 LNG선예인서비스 건 수</h4>
-                    <h1>총 182건</h1>
+                    <div class="d-flex justify-content-center">
+                        <h1>총&nbsp;</h1>
+                        <h1 id="count_domestic"></h1>
+                        <h1> 건</h1>
+                    </div>
                 </div>
                 <div id="graph">
                     <canvas id="domestic"></canvas>
                 </div>
             </div>
             <div class="tab-pane fade" id="customers-eq" role="tabpanel" aria-labelledby="customers-eq-tab">
-                <ul class="list-unstyled py-3 nav">
-                    <li class="nav-link"><a href="#"><img src="img/partners_07.gif" alt="partners_07"></a></li>
-                    <li class="nav-link"><a href="#"><img src="img/partners_03.gif" alt="partners_03"></a></li>
-                    <li class="nav-link"><a href="#"><img src="img/partners_06.gif" alt="partners_06"></a></li>
-                    <li class="nav-link"><a href="#"><img src="img/partners_05.gif" alt="partners_05"></a></li>
+                <ul class="list-unstyled py-3 nav border-bottom d-flex justify-content-center">
+                    <li class="nav-link"><a href="http://www.haeyangship.co.kr/"><img src="img/partners_07.gif" alt="partners_07"></a></li>
+                    <li class="nav-link"><a href="http://www.hanjin.com/kor/Main.do"><img src="img/partners_03.gif" alt="partners_03"></a></li>
+                    <li class="nav-link"><a href="https://www.skshipping.com/Kor/Index.aspx"><img src="img/partners_06.gif" alt="partners_06"></a></li>
+                    <li class="nav-link"><a href="https://www.hmm21.com/cms/company/korn/index.jsp"><img src="img/partners_05.gif" alt="partners_05"></a></li>
                 </ul>
                 <div class="text-center py-3">
-                    <h4>해외 선박 LNG선예인서비스 건 수</h4>
-                    <h1>총 143건</h1>
+                    <div class="d-flex justify-content-center">
+                        <h1>총&nbsp;</h1>
+                        <h1 id="count_overseas"></h1>
+                        <h1> 건</h1>
+                    </div>
                 </div>
                 <div id="graph">
                     <canvas id="overseas"></canvas>

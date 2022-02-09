@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
 body {
     overflow-x: hidden;
 }
@@ -102,11 +103,19 @@ body {
 }
 
 #explain_01 {
-    padding: 3rem 0;
+    padding: 5rem 0;
 }
 
 #explain_02 {
-    padding: 3rem 0;
+    padding: 1rem 0;
+}
+
+#explain_01 p {
+    text-align: left;
+}
+
+#explain_02 p {
+    text-align: left;
 }
 
 .learn {
@@ -159,6 +168,15 @@ body {
     height: 310px;
     width:100%;
     position:absolute;
+}
+@media (max-width: 991px) {
+    #explain_01 p {
+        text-align: center;
+    }
+    
+    #explain_02 p {
+        text-align: center;
+    }
 }
 
 @media (max-width: 568px) {

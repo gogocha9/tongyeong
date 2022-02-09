@@ -88,3 +88,25 @@ const Chart_overseas = new Chart(ctx_overseas, {
         },
     }
 });
+
+let countBox_domestic = document.querySelector('#count_domestic'),
+count_domestic = 0;
+let counting_domestic = setInterval(function () {
+    if (count_domestic == datas_domestic.map(i => +i).reduce((a,c) => a + c, 0)) {
+        clearInterval(counting_domestic);
+        return false;
+    }
+    count_domestic += 7;
+    countBox_domestic.innerHTML = new Intl.NumberFormat().format(count_domestic);
+}, 20);
+
+let countBox_overseas = document.querySelector('#count_overseas'),
+count_overseas = 0;
+let counting_overseas = setInterval(function () {
+    if (count_overseas == datas_overseas.map(i => +i).reduce((a,c) => a + c, 0)) {
+        clearInterval(counting_overseas);
+        return false;
+    }
+    count_overseas += 1;
+    countBox_overseas.innerHTML = new Intl.NumberFormat().format(count_overseas);
+}, 5);

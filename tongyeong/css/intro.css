@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;700&display=swap');
+
 * {
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -53,6 +55,11 @@ body {
     z-index: 1;
     transition: 0.5s;
     display: none;
+}
+
+#ceo p,
+#ceo-name p {
+    font-family: 'Noto Serif KR', serif;
 }
 
 #toTop.down {
@@ -123,7 +130,7 @@ body {
 #ceo p {
     line-height: 2.5;
     letter-spacing: 1.4px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 #ceo-name p{
@@ -207,6 +214,14 @@ body {
     background: #dfdfdf;
 }
 
+#ceo-title {
+    font-weight: bold;
+}
+
+#ceo-img img{
+    text-align: right;
+}
+
 @media (max-width: 1400px) {
     #history li {
         padding-left: 15%;
@@ -248,6 +263,10 @@ body {
 }
 
 @media (max-width: 993px) {
+    #ceo-img img {
+        text-align: center;
+    }
+
     #history li {
         padding-left: 0%;
     }
@@ -262,6 +281,9 @@ body {
 
     #history li:nth-child(odd)::before {
         left: 46.8%;
+    }
+    #ceo-title {
+        font-size: 1.5rem;
     }
 }
 
@@ -309,6 +331,6 @@ body {
     }
 
     #ceo-title {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
 }
