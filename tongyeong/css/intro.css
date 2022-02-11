@@ -57,6 +57,10 @@ body {
     display: none;
 }
 
+#ceo-greeting {
+    padding: 0 8rem;
+}
+
 #ceo p,
 #ceo-name p {
     font-family: 'Noto Serif KR', serif;
@@ -128,9 +132,9 @@ body {
 }
 
 #ceo p {
-    line-height: 2.5;
+    line-height: 2;
     letter-spacing: 1.4px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 #ceo-name p{
@@ -138,7 +142,19 @@ body {
 }
 
 #ceo-name span{
+    position: relative;
     font-size: 1.4rem;
+}
+
+#ceo-name span::before {
+    position: absolute;
+    content: '';
+    background-image: url(../img/sign.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 55px;
+    bottom: -14px;
+    right: -100px;
 }
 
 /* history */
@@ -218,8 +234,13 @@ body {
     font-weight: bold;
 }
 
-#ceo-img img{
+#ceo-img {
     text-align: right;
+}
+
+#ceo-img img{
+    width: 525px;
+    height: 600px;
 }
 
 @media (max-width: 1400px) {
@@ -263,7 +284,7 @@ body {
 }
 
 @media (max-width: 993px) {
-    #ceo-img img {
+    #ceo-img {
         text-align: center;
     }
 
@@ -284,6 +305,19 @@ body {
     }
     #ceo-title {
         font-size: 1.5rem;
+    }
+
+    #ceo p {
+        font-size: 0.94rem;
+    }
+
+    #ceo-greeting {
+        text-align: center;
+    }
+
+    #ceo-name span::before {
+        top: 30px;
+        right: 50px;
     }
 }
 
@@ -312,25 +346,37 @@ body {
 
 @media (max-width: 565px) {
     #ceo-img img {
-        width: 330px;
-        height: 230px;
+        width: 280px;
+        height: 390px;
     }
 
     #ceo p {
-        line-height: 2.5;
         letter-spacing: 1.4px;
-        font-size: 0.8rem;
+        font-size: 2.99vw
     }
 
     #ceo-name p{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     #ceo-name span{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     #ceo-title {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
+    }
+
+    #ceo-greeting {
+        padding: 0;
+    }
+
+    #ceo-name span::before {
+        top: 30px;
+        right: 50px;
+    }
+
+    #footer-intro p{
+        font-size: 0.8rem;
     }
 }

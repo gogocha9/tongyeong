@@ -171,3 +171,9 @@ body {
 .table_cell_center {
     display: table-cell; text-align: center; vertical-align: middle;
 }
+
+@media (max-width: 568px) {
+    #footer-intro p{
+        font-size: 0.8rem;
+    }
+}

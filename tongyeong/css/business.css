@@ -188,14 +188,38 @@ body {
     width: 800px;
 }
 
+#company-intro {
+    padding: 0 1.25rem;
+}
+
+#company-intro p {
+    font-size: 1.25rem;
+}
+
 @media (max-width: 991px) {
     #graph canvas {
         width: 550px;
     }   
+
+    #company-intro  {
+        text-align: center;
+    }
 }
 
 @media (max-width: 568px) {
     #graph canvas {
         width: 300px;
     }   
+
+    #company-intro p {
+        font-size: 0.8rem;
+    }
+
+    #customers_tab_wrap_Content img {
+        width: 130px;
+    }
+
+    #footer-intro p{
+        font-size: 0.8rem;
+    }
 }

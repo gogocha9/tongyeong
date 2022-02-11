@@ -139,4 +139,8 @@ body {
     .tab ul li button {
         font-size: 14px;
     }
+
+    #footer-intro p{
+        font-size: 0.8rem;
+    }
 }

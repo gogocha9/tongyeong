@@ -1,45 +1,45 @@
 const labels = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
-    'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec',
+    '2010',
+    '2011',
+    '2012',
+    '2013',
+    '2014',
+    '2015',
+    '2016',
+    '2017',
+    '2018',
+    '2019',
+    '2020',
+    '2021',
 ];
 
 let datas_domestic = [
-    '15',
-    '17',
-    '16',
-    '20',
-    '23',
-    '12',
-    '15',
-    '5',
+    '6',
     '9',
-    '16',
-    '21',
+    '12',
     '13',
+    '15',
+    '16',
+    '18',
+    '19',
+    '20',
+    '21',
+    '22',
+    '24',
 ];
 
 let datas_overseas = [
-    '13',
-    '12',
-    '15',
-    '14',
-    '20',
-    '9',
-    '5',
-    '2',
+    '1',
+    '3',
     '6',
-    '11',
+    '9',
+    '10',
+    '12',
     '13',
+    '15',
+    '17',
+    '19',
+    '20',
     '23',
 ];
 
@@ -96,9 +96,9 @@ let counting_domestic = setInterval(function () {
         clearInterval(counting_domestic);
         return false;
     }
-    count_domestic += 7;
+    count_domestic += 5;
     countBox_domestic.innerHTML = new Intl.NumberFormat().format(count_domestic);
-}, 20);
+}, 15);
 
 let countBox_overseas = document.querySelector('#count_overseas'),
 count_overseas = 0;

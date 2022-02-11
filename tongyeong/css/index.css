@@ -63,7 +63,11 @@ body {
 }
 
 #intro h1{
-    font-size: 2em;
+    font-size: 2.5em;
+}
+
+#intro p {
+    font-size: 1.25rem;
 }
 
 #toButtom {
@@ -111,11 +115,11 @@ body {
 }
 
 #explain_01 p {
-    text-align: left;
+    font-size: 1.25rem;
 }
 
 #explain_02 p {
-    text-align: left;
+    font-size: 1.25rem;
 }
 
 .learn {
@@ -189,5 +193,25 @@ body {
         overflow:hidden;
         position:relative;
         padding: 30% 0;
+    }
+
+    #intro h1{
+        font-size: 1.64em;
+    }
+
+    #intro p{
+        font-size: 2.85vw;
+    }
+
+    #explain_01 p {
+        font-size: 1.2rem;
+    }
+    
+    #explain_02 p {
+        font-size: 1.2rem;
+    }
+
+    #footer-intro p{
+        font-size: 0.8rem;
     }
 }
