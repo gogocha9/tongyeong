@@ -173,7 +173,7 @@ body {
 }
 
 @media (max-width: 568px) {
-    #footer-intro p{
-        font-size: 0.8rem;
+    .footer-about p{
+        font-size: 1rem;
     }
 }

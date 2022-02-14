@@ -195,6 +195,28 @@ body {
 #company-intro p {
     font-size: 1.25rem;
 }
+.explain_img {
+    grid-area: explain_img;
+}
+
+.explain_img img {
+    width: 580px;
+    height: 326px;
+}
+
+.explain_ex {
+    grid-area: explain_ex;
+    width: 100%;
+}
+
+#explain_grid {
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+    "explain_ex explain_img";
+    justify-content: space-around;
+    align-items: center;
+}
 
 @media (max-width: 991px) {
     #graph canvas {
@@ -203,6 +225,12 @@ body {
 
     #company-intro  {
         text-align: center;
+    }
+
+    #explain_grid {
+        grid-template-areas: 
+        "explain_img"
+        "explain_ex";
     }
 }
 
@@ -219,7 +247,12 @@ body {
         width: 130px;
     }
 
-    #footer-intro p{
-        font-size: 0.8rem;
+    .footer-about p{
+        font-size: 1rem;
+    }
+
+    .explain_img img {
+        width: 318px;
+        height: 200px;
     }
 }
