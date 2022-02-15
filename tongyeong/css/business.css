@@ -193,15 +193,15 @@ body {
 }
 
 #company-intro p {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
 }
 .explain_img {
     grid-area: explain_img;
 }
 
 .explain_img img {
-    width: 580px;
-    height: 326px;
+    width: 700px;
+    height: 450px;
 }
 
 .explain_ex {
@@ -212,10 +212,16 @@ body {
 #explain_grid {
     position: relative;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "explain_ex explain_img";
     justify-content: space-around;
     align-items: center;
+}
+
+#explain_01,
+#explain_02,
+#explain_03 {
+    padding: 1.5rem 0;
 }
 
 @media (max-width: 991px) {
@@ -231,6 +237,11 @@ body {
         grid-template-areas: 
         "explain_img"
         "explain_ex";
+    }
+
+    .explain_img img {
+        width: 500px;
+        height: 300px;
     }
 }
 

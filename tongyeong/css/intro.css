@@ -58,7 +58,7 @@ body {
 }
 
 #ceo-greeting {
-    padding: 0 8rem;
+    padding: 0 4rem;
 }
 
 #ceo p,
@@ -132,18 +132,20 @@ body {
 }
 
 #ceo p {
-    line-height: 2;
+    line-height: 2.5;
     letter-spacing: 1.4px;
-    font-size: 1.25rem;
+    font-size: 1.05rem;
 }
 
 #ceo-name p{
-    font-size: 1rem;
+    font-size: 1.35rem;
+    letter-spacing: 2.5px;
 }
 
 #ceo-name span{
     position: relative;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    letter-spacing: 12px;
 }
 
 #ceo-name span::before {
@@ -348,6 +350,10 @@ body {
     #ceo-img img {
         width: 280px;
         height: 390px;
+    }
+
+    #ceo h2 {
+        font-size: 0.9rem;
     }
 
     #ceo p {

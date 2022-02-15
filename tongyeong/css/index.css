@@ -164,15 +164,84 @@ body {
 .map-container{
     overflow:hidden;
     position:relative;
-    padding: 20% 0 10% 0;
+    padding: 15% 40%;
 }
 
 .map-container iframe{
     left:0;
     top:0;
-    height: 310px;
+    height: 100%;
     width:100%;
     position:absolute;
+}
+
+#contact-info {
+    padding: 0 10rem;
+}
+
+#contact-address p:nth-child(1) {
+    font-size: 2rem;
+}
+
+#contact-info ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+#contact-info ul li::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-info #contact-subway ul li:nth-child(1)::before{
+    position: absolute;
+    content: '2';
+    left: -60px;
+    width: 50px;
+    height: 29px;
+    border-radius: 20px;
+    background: #049d00;
+    color: #fff;
+    text-align: center;
+}
+
+#contact-info #contact-subway ul li:nth-child(2)::before{
+    position: absolute;
+    content: '3';
+    left: -60px;
+    width: 50px;
+    height: 29px;
+    border-radius: 20px;
+    background: #f08a06;
+    color: #fff;
+    text-align: center;
+}
+
+#contact-info #contact-bus ul li:nth-child(1)::before{
+    position: absolute;
+    content: '8541';
+    left: -70px;
+    width: 60px;
+    height: 29px;
+    border-radius: 20px;
+    background: #18a830;
+    color: #fff;
+    text-align: center;
+}
+
+#contact-info #contact-bus ul li:nth-child(2)::before{
+    position: absolute;
+    content: '643';
+    left: -60px;
+    width: 50px;
+    height: 29px;
+    border-radius: 20px;
+    background: #081ddd;
+    color: #fff;
+    text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -187,6 +256,18 @@ body {
     #explain_01 p {
         width: 68%;
         font-size: 1.235rem;
+    }
+
+    #contact-info {
+        padding: 0rem;
+    }
+
+    #contact-info ul{
+        padding: 1rem 0 0 8rem;
+    }
+
+    #contact-info ul li{
+        font-size: 15px;
     }
 }
 
@@ -221,5 +302,21 @@ body {
 
     .footer-about p{
         font-size: 1rem;
+    }
+
+    #contact-address p:nth-child(1) {
+        font-size: 1.1rem;
+    }
+
+    #contact-info {
+        padding: 0 20px;
+    }
+
+    #contact-info ul{
+        padding: 1rem 0 0 5rem;
+    }
+
+    #contact-info ul li{
+        font-size: 13px;
     }
 }
