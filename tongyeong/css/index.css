@@ -181,17 +181,17 @@ body {
 
 #contact-info ul li span {
     margin-right: 15px;
-    padding: 3px 20px;
+    padding: 3px 15px;
     border-radius: 20px;
     color: #fff;
 }
 
 #contact-subway ul li:nth-child(1) span {
-    background: #049d00;
+    background: #02a94e;
 }
 
 #contact-subway ul li:nth-child(2) span {
-    background: #f08a06;
+    background: #ef7d1e;
 }
 
 #contact-subway ul li:nth-child(3) span {
