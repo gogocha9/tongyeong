@@ -108,70 +108,134 @@ body {
   }
 }
 
-#explain_01 {
-  padding: 5rem 0;
+@keyframes toRight-infinite {
+  0%,
+  100% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-#explain_02 {
-  padding: 1rem 0;
+@keyframes toLeft-infinite {
+  0%,
+  100% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(50%);
+    opacity: 1;
+  }
+}
+/* slider */
+
+.swiper {
+  width: 100%;
+  min-height: 100%;
 }
 
-#explain_01 h1 {
-  font-size: 2.7rem;
+.swiper-slide {
+  font-size: 18px;
+  height: 100vh;
+  padding: 80px 100px 30px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#explain_02 h1 {
-  font-size: 2.7rem;
+.swiper-slide .wrap {
+  top: 50px;
 }
 
-#explain_01 p {
-  width: 80%;
-  font-size: 1.25rem;
-  color: #707070;
+.slider-img {
+  bottom: 0;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#explain_02 p {
-  font-size: 1.25rem;
-  color: #707070;
+#slide1 ion-icon {
+  animation: toRight-infinite;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
-.learn {
-  transition: 0.2s;
-  color: #212529;
+#slide2 ion-icon {
+  animation: toLeft-infinite;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
-.learn:hover {
-  background: #212529;
+.slider-img img,
+.slider-img div {
+  width: 550px;
+  height: 300px;
+}
+
+.slider-img div p {
+  line-height: 40px;
+  font-weight: 300;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
   color: #fff;
 }
 
-.pf-link-box {
-  position: relative;
+.swiper-slide:nth-child(1) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/intro_section_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-slide:nth-child(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/intro_section_02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-snb {
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
   z-index: 1;
+  font-size: 1.3rem;
 }
 
-.pf-link {
-  color: #212529;
-  text-decoration: none;
+.slider-snb ul {
+  display: flex;
+  list-style: none;
 }
 
-.pf-hover img {
-  transition: transform 0.5s;
-  -o-transition: transform 0.5s;
-  -moz-transition: transform 0.5s;
-  -webkit-transition: transform 0.5s;
+.slider-snb ul li {
+  margin-right: 60px;
 }
 
-.pf-hover:hover img {
-  -webkit-transform: scale(1.1); /*  크롬 */
-  -moz-transform: scale(1.1); /* FireFox */
-  -o-transform: scale(1.1); /* Opera */
-  transform: scale(1.1);
-  transition: transform 0.5s;
-  -o-transition: transform 0.5s;
-  -moz-transition: transform 0.5s;
-  -webkit-transition: transform 0.5s;
+.slider-snb ul li a {
+  position: relative;
+  color: #fff;
+  font-size: 1.1rem;
 }
+
+.slider-snb ul li a.active::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150%;
+  height: 2px;
+  background: #fff;
+}
+
+/* //slider */
 
 .map-container {
   overflow: hidden;
@@ -229,20 +293,15 @@ body {
   font-size: 18px;
 }
 
+@media (max-width: 1600px) {
+  .slider-img img,
+  .slider-img div {
+    width: 430px;
+    height: 200px;
+  }
+}
+
 @media (max-width: 991px) {
-  #explain_01 {
-    text-align: center;
-  }
-
-  #explain_02 {
-    text-align: center;
-  }
-
-  #explain_01 p {
-    width: 68%;
-    font-size: 1.235rem;
-  }
-
   #contact-info {
     padding: 0rem;
   }
@@ -253,6 +312,10 @@ body {
 
   #contact-info ul li {
     font-size: 15px;
+  }
+
+  #slide2 .slider-img div {
+    text-align: right;
   }
 }
 
@@ -267,31 +330,6 @@ body {
     overflow: hidden;
     position: relative;
     padding: 30% 0;
-  }
-
-  #intro h1 {
-    font-size: 1.64em;
-  }
-
-  #intro p {
-    font-size: 2.85vw;
-  }
-
-  #explain_01 h1 {
-    font-size: 2rem;
-  }
-
-  #explain_02 h1 {
-    font-size: 2rem;
-  }
-
-  #explain_01 p {
-    font-size: 1rem;
-    text-justify: auto;
-  }
-
-  #explain_02 p {
-    font-size: 1rem;
   }
 
   .footer-about p {
