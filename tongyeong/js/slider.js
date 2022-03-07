@@ -4,4 +4,14 @@ var swiper = new Swiper(".mySwiper", {
     type: "progressbar",
     clickable: true,
   },
+
+  navigation: {
+    nextEl: ".movement-right",
+    prevEl: ".movement-left",
+  },
+
+  autoplay: {
+    delay: 7500,
+    disableOnlnteraction: false,
+  },
 });

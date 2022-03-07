@@ -64,7 +64,7 @@ body {
 }
 
 #intro h1 {
-  font-size: 2.5em;
+  font-size: 2.2em;
 }
 
 #intro p {
@@ -149,12 +149,18 @@ body {
   top: 50px;
 }
 
-.slider-img {
+.slider-img1,
+.slider-img2 {
   bottom: 0;
   white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+#slide1 h1,
+#slide2 h1 {
+  font-size: calc(1.35rem + 1vw);
 }
 
 #slide1 ion-icon {
@@ -317,6 +323,14 @@ body {
   #slide2 .slider-img div {
     text-align: right;
   }
+
+  .slider-img1 {
+    justify-content: start;
+  }
+
+  .slider-img2 {
+    justify-content: end;
+  }
 }
 
 @media (max-width: 568px) {
@@ -350,5 +364,18 @@ body {
 
   #contact-info ul li {
     font-size: 13px;
+  }
+
+  .swiper-slide {
+    padding: 0 20px;
+  }
+
+  .slider-img div p {
+    font-size: 1rem;
+  }
+
+  #slide1 h1,
+  #slide2 h1 {
+    font-size: calc(1.2rem + 0.8vw);
   }
 }
